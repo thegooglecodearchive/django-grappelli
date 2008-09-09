@@ -1,0 +1,5 @@
+#labels Featured
+== ChangeList and ChangeForm ==
+
+[http://sehmaschine.net/media/grappelli/changelist.jpg http://sehmaschine.net/media/grappelli/changelist_thumb.jpg]
+[http://sehmaschine.net/media/grappelli/changeform.jpg http://sehmaschine.net/media/grappelli/changeform_thumb.jpg]
