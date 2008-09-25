@@ -10,7 +10,7 @@ We tried to give the Admin-Interface a more "grown-up" and coherent look & feel 
 ----
 *Why TinyMCE?*
 
-With all the crappy Rich-Text-Editors out there, it´s one of the better ones.
+With all the crappy Rich-Text-Editors out there, this one is ok (don´t ask how long it took to style the plug-in windows ...).
 ----
 *Why are there folders like css and css_grappelli, img and img_grappelli?*
 
