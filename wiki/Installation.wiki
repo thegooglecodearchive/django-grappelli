@@ -62,4 +62,4 @@ class EntryOptions(admin.ModelAdmin):
     popup_css: "/media/admin/tinymce_setup/css_grappelli/popup.css",
 }}} 
   # *Optional: Change tinymce_setup.js*
-    Open tinymce_setup.js and adjust the setup/behaviour of TinyMCE according to your needs - see xxx
+    Open tinymce_setup.js and adjust the setup/behaviour of TinyMCE according to your needs - see http://wiki.moxiecode.com/index.php/TinyMCE:Configuration
