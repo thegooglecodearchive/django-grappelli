@@ -1,5 +1,7 @@
 =Installation=
 
+There are several ways of Installing Grappelli, depending on your server-setup: Basically, you have to replace Djangos /media/ and /templates/-directory.
+
   # *Download Grappelli Media-Files*
     Go to your admin-media directory and delete all Django Media-Files (including .svn). Then Download the Grappelli Media-Files:
 {{{
