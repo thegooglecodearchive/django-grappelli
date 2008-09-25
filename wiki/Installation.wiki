@@ -64,3 +64,7 @@ class EntryOptions(admin.ModelAdmin):
 }}} 
   # *Optional: Change tinymce_setup.js*
     Open tinymce_setup.js and adjust the setup/behaviour of TinyMCE according to your needs - see http://wiki.moxiecode.com/index.php/TinyMCE:Configuration
+
+==Customizing Navigation-Areas==
+
+  # Will be explained ...
