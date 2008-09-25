@@ -6,10 +6,10 @@ With Grappelli, you get 2 additional Navigation Areas:
 
 Use *shortcuts.html* to place links for the most common pages. This can be a link to an Application or a link to a commonly used !ChangeList or whatever you´d like to have here ...
 
-  # Open /templates/admin/includes_grappelli/shortcuts.html and change it.
+  * Open /templates/admin/includes_grappelli/shortcuts.html and change it.
 
 ==Navigation==
 
 Use *navigation.html* to present all sub-pages available within the Admin-Interface as well as external sites connected with your project (e.g. links to your Projectmanagement or to your Statistics App, ...). 
 
-  # Open /templates/admin/includes_grappelli/navigation.html and change it.
+  * Open /templates/admin/includes_grappelli/navigation.html and change it.
