@@ -16,3 +16,11 @@ With all the crappy Rich-Text-Editors out there, it´s one of the better ones.
 
 Because, with just one line of code (changing base.css), you are able to switch from the original Django-Theme to Grappelli.
 ----
+*Instead of just changing the original Django Admin-Interface, why is Grappelli not totally build up from scratch?*
+
+Because if there are new features in the Admin-Interface, we are planning to integrate them as fast as possible using Grappelli. Therefore, it heavily relies on the Original Interface.
+----
+*Who made Grappelli?*
+
+Grappelli is based on the Original Django Admin-Interface by Wilson Miner (http://wilsonminer.com). The Grappelli-Skin is made and maintained by Patrick Kranzlmüller and Axel Swoboda of vonautomatisch (http://vonautomatisch.at).
+----
