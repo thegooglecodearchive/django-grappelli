@@ -1,0 +1,12 @@
+=Installation=
+
+  # *Download Grappelli Media-Files*
+    Go to your admin-media directory and delete all Django Media-Files (including .svn). Then Download the Grappelli Media-Files:
+{{{
+svn checkout http://django-grappelli.googlecode.com/svn/trunk/media/ .
+}}}
+  # *Download Grappelli Templates-Files*
+    Go to your admin-templates directory and delete all Django Template-Files (including .svn). Then Download the Grappelli Template-Files:
+{{{
+svn checkout http://django-grappelli.googlecode.com/svn/trunk/templates/ .
+}}}
