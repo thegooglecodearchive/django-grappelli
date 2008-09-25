@@ -1,4 +1,3 @@
-#labels Featured
 == !ChangeList and !ChangeForm ==
 
 [http://sehmaschine.net/media/grappelli/changelist.jpg http://sehmaschine.net/media/grappelli/changelist_thumb.jpg]
