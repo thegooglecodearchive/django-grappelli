@@ -1,4 +1,3 @@
-#labels Featured
 =Installation=
 
 There are several ways of Installing Grappelli, depending on the location of your media-files and templates): Basically, you just have to replace Djangos /admin/media/ and /admin/templates/-directory.
