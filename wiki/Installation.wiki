@@ -12,3 +12,40 @@ svn checkout http://django-grappelli.googlecode.com/svn/trunk/media/ .
 {{{
 svn checkout http://django-grappelli.googlecode.com/svn/trunk/templates/ .
 }}}
+
+
+==Using "collapse-open" and "collapse-closed"==
+
+With using Grappelli, you get new classes for displaying fieldsets in the Admin-Interface. With "collapse-open", the headline of the fieldset is collapsible and open by default. With "collapse-closed", the headline of the fieldset is collapsible but closed by default. Without using a class, the fieldset won´t be collapsible and is open by default.
+{{{
+class EntryOptions(admin.ModelAdmin):
+    ....
+    fieldsets = (
+        ('', {
+            'fields': ('title', 'subtitle', 'slug', 'pub_date', 'status',),
+        }),
+        ('Flags', {
+            'classes': ('collapse-closed',),
+            'fields' : ('flag_front', 'flag_sticky', 'flag_allow_comments', 'flag_comments_closed',),
+        }),
+        ('Tags', {
+            'classes': ('collapse-closed',),
+            'fields' : ('tags',),
+        }),
+        ('Image', {
+            'fields' : ('image',),
+        }),
+        ('Content', {
+            'classes': ('collapse-open',),
+            'fields' : ('summary', 'body',),
+        }),
+        ('Author', {
+            'classes': ('collapse-closed',),
+            'fields' : ('author',),
+        }),
+    )
+    class Media:
+        ....
+    
+
+}}}
