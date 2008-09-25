@@ -1,0 +1,16 @@
+=Using TinyMCE=
+
+  # *Change the media-definition of your !ModelAdmin*
+{{{
+    class Media:
+        js = ['/media/admin/tinymce_2/jscripts/tiny_mce/tiny_mce.js', '/media/admin/tinymce_setup/tinymce_setup.js',]
+}}}
+  # *Optional: Change paths in tinymce_setup.js*
+    Open tinymce_setup.js and change the following paths according to your media-setup.
+{{{
+    content_css: "/media/admin/tinymce_setup/css_grappelli/content.css",
+    editor_css: "/media/admin/tinymce_setup/css_grappelli/editor.css",
+    popup_css: "/media/admin/tinymce_setup/css_grappelli/popup.css",
+}}} 
+  # *Optional: Change tinymce_setup.js*
+    Open tinymce_setup.js and adjust the setup/behaviour of TinyMCE according to your needs - see http://wiki.moxiecode.com/index.php/TinyMCE:Configuration
