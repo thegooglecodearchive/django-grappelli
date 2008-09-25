@@ -18,7 +18,7 @@ Because, with just one line of code (changing base.css), you are able to switch 
 ----
 *Instead of just changing the original Django Admin-Interface, why is Grappelli not totally build up from scratch?*
 
-Because if there are new features in the Admin-Interface, we are planning to integrate them as fast as possible using Grappelli. Therefore, it heavily relies on the Original Interface.
+Because if there are new features in the Admin-Interface, we are planning to integrate them as fast as possible using Grappelli. Therefore, Grappelli heavily relies on the Original Interface.
 ----
 *Who made Grappelli?*
 
