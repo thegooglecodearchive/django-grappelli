@@ -8,6 +8,7 @@ Basically, Grappelli gives you a new look & feel for the Django Admin-Interface.
   * In Add- and Change-Forms, every Fieldset/H2 is collapsible. Additional class "collapse-open" for collapsible elements which are open by default and "collapse-closed for elements which are closed by default.
   * Collapsed Fieldsets are automatically opened when there´s an error within the Fieldset.
   * Corrected some errors wich are around forever ... esp. with Date- and !TimeFields as well as !BooleanField.
+  * *Reordering for Edit-inlines (Stacked & Tabular)*.
 
 =TinyMCE Skin=
   * Also included with *Grappelli*, you get a new skin for !TinyMce which smoothly integrates with the Admin-Interface.
