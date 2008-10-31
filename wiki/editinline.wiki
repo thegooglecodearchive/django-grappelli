@@ -2,7 +2,7 @@
 
 With using Grappelli, you get the option to (re)order edit-lines (Stacked & Tabular). Here´s how you do that ...
 
-*Please be aware that this is achieved with pure javascript (JQuery) - since Django doesn´t support re-ordering inlines, this is currently the only possiblity ...
+*Please be aware that this is achieved with pure javascript (JQuery) - since Django doesn´t support re-ordering inlines, this is currently the only possiblity ...*
 
 ===Add an Order-Field to your inline-related Model===
 {{{
