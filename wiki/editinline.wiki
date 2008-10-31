@@ -1,33 +1,14 @@
 =Reordering Edit-Inlines=
 
 With using Grappelli, you get the option to (re)order edit-lines (Stacked & Tabular).
+
+==Add an Order-Field to your inline-related Model==
 {{{
-class EntryOptions(admin.ModelAdmin):
+class PhotoGallery(models.Model):
     ....
-    fieldsets = (
-        ('', {
-            'fields': ('title', 'subtitle', 'slug', 'pub_date', 'status',),
-        }),
-        ('Flags', {
-            'classes': ('collapse-closed',),
-            'fields' : ('flag_front', 'flag_sticky', 'flag_allow_comments', 'flag_comments_closed',),
-        }),
-        ('Tags', {
-            'classes': ('collapse-closed',),
-            'fields' : ('tags',),
-        }),
-        ('Image', {
-            'fields' : ('image',),
-        }),
-        ('Content', {
-            'classes': ('collapse-open',),
-            'fields' : ('summary', 'body',),
-        }),
-        ('Author', {
-            'classes': ('collapse-closed',),
-            'fields' : ('author',),
-        }),
-    )
-    class Media:
-        ....
+
+class PhotoGalleryItem(models.Model):
+    photogallery = models.ForeignKey(PhotoGallery)
+    ....
+    order = models.PositiveIntegerField("Order", blank=True, null=True)
 }}}
