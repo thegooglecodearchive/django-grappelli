@@ -12,3 +12,5 @@ svn checkout http://django-grappelli.googlecode.com/svn/trunk/media/ .
 {{{
 svn checkout http://django-grappelli.googlecode.com/svn/trunk/templates/ .
 }}}
+
+Note: A different approach is describe here: http://iamzed.com/2008/12/11/customizing-django-admin-templates-and-media/
