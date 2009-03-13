@@ -15,10 +15,14 @@ With all the crappy Rich-Text-Editors out there, this one is ok (don´t ask how 
 *Why are there folders like css and css_grappelli, img and img_grappelli?*
 
 Because, with just one line of code (changing base.css), you are able to switch from the original Django-Theme to Grappelli.
+
+_Note that this is going to change soon ... we´re about to cleanup the code!_
 ----
 *Instead of just changing the original Django Admin-Interface, why is Grappelli not totally build up from scratch?*
 
 Because if there are new features in the Admin-Interface, we are planning to integrate them as fast as possible using Grappelli. Therefore, Grappelli heavily relies on the Original Interface.
+
+_This said, we´re about to refactor the html- & css-files!_
 ----
 *Who made Grappelli?*
 
