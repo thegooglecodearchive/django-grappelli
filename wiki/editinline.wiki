@@ -1,8 +1,10 @@
 =Reordering Edit-Inlines=
 
-With using Grappelli, you get the option to (re)order edit-lines (Stacked & Tabular). Here´s how you do that ...
+With using Grappelli, you get the option to (re)order edit-lines (Stacked & Tabular) using Drag & Drop. Moreover, the reordering is preserved in the case of errors.
 
-*Please be aware that this is achieved with pure javascript (JQuery) - since Django doesn´t support re-ordering inlines, this is currently the only possiblity.*
+*This is achieved with pure javascript (JQuery) - since Django doesn´t support re-ordering inlines, this is currently the only possiblity.*
+
+Please Note that the order-field must not have a *default-attribute*, because it prevents the reordering.
 
 ===Add an Order-Field to your inline-related Model===
 {{{
@@ -12,7 +14,7 @@ class PhotoGallery(models.Model):
 class PhotoGalleryItem(models.Model):
     photogallery = models.ForeignKey(PhotoGallery)
     ...
-    order = models.PositiveIntegerField("Order", blank=True, null=True)
+    order = models.PositiveIntegerField()
     ...
     class Meta:
         ordering = ['order']
