@@ -2,3 +2,5 @@
 
 [http://sehmaschine.net/media/grappelli/changelist.jpg http://sehmaschine.net/media/grappelli/changelist_thumb.jpg]
 [http://sehmaschine.net/media/grappelli/changeform.jpg http://sehmaschine.net/media/grappelli/changeform_thumb.jpg]
+
+More Previews are availabe with the new version of the !FileBrowser, see http://code.google.com/p/django-filebrowser/wiki/screenshots.
