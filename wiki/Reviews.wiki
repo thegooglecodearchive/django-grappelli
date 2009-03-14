@@ -2,5 +2,5 @@ If you wrote an article/review about Grappelli, please let us know ...
 
 =Articles/Reviews=
 
-  * 2008-09-23 [http://avalonstar.com/blog/2008/sep/23/first-look-django-grappelli/ A first look at django-grappelli] (by avalonstar)
   * 2008-12-11 [http://iamzed.com/2008/12/11/customizing-django-admin-templates-and-media/ Customizing Django’s Admin Templates and Media When Using the Built-In Development Web Server] (by Chris Scott)
+  * 2008-09-23 [http://avalonstar.com/blog/2008/sep/23/first-look-django-grappelli/ A first look at django-grappelli] (by avalonstar)
