@@ -26,5 +26,5 @@ _This said, we´re about to refactor the html- & css-files!_
 ----
 *Who made Grappelli?*
 
-Grappelli is based on the Original Django Admin-Interface by Wilson Miner (http://wilsonminer.com). The Grappelli-Skin is made and maintained by Patrick Kranzlmüller and Axel Swoboda of vonautomatisch (http://vonautomatisch.at).
+Grappelli is based on the Original Django Admin-Interface by Wilson Miner (http://wilsonminer.com). Grappelli is made and maintained by Patrick Kranzlmüller and Axel Swoboda of vonautomatisch (http://vonautomatisch.at).
 ----
