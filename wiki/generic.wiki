@@ -11,3 +11,5 @@ class MyModelOptions(admin.ModelAdmin):
             '/media/admin/js/admin/Generic.js',
         ]
 }}}
+
+*The original scripts are by Weston Nielson. For more details, please take a look at* http://code.google.com/p/django-genericadmin/.
