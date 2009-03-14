@@ -1,16 +1,11 @@
 Basically, Grappelli gives you a new look & feel for the Django Admin-Interface.
 
 =Features=
-  * Additional Navigation Area on the Index-Site (useful for linking different admin-sections as well as external ressources).
-  * Drop-Down Shortcuts-Menu in the Header (useful for linking admin-sections on every site within the Admin-Interface).
-  * New Buttons/Icons.
-  * Changed the Fonts from "Lucida Grande" to "Arial".
-  * In Add- and Change-Forms, every Fieldset/H2 is collapsible. Additional class "collapse-open" for collapsible elements which are open by default and "collapse-closed for elements which are closed by default.
-  * Collapsed Fieldsets are automatically opened when there´s an error within the Fieldset.
-  * Corrected some errors wich are around forever ... esp. with Date- and !TimeFields as well as !BooleanField.
-  * *Reordering for Edit-inlines (Stacked & Tabular)*.
-
-=TinyMCE Skin=
-  * Also included with *Grappelli*, you get a new skin for !TinyMce which smoothly integrates with the Admin-Interface.
-  * Please be aware that we DID NOT adapt all TinyMCE-Icons, for we don´t think that clients/editors should get all the possibilities currently available with TinyMCE (and we didn´t have the time so far).
-  * Included: Format, Styles, Bold, Italic, Underline, Ordered List, Unordered List, Undo, Redo, Link, Unlink, Edit/Insert Image, HTML, Visual characters, Fullscreen, Paste From Word, Search/Replace, Media, Custom Character. If you think additional buttons/icons should be available, please let us know ...
+  * *New/Improved Look & Feel*
+  * *Enhanced Collapsibles*
+  * *Reordering (Drag & Drop) for Edit-inlines (Stacked & Tabular)*
+  * *Visual Generic Relationships*
+  * *!PositionField*
+  * *Grappelli TinyMCE Skin*
+  * Additional Navigation Area on the Index-Site
+  * User-related Bookmarks in the Header-Section
