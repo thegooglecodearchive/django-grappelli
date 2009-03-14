@@ -1,0 +1,15 @@
+=Position-Field=
+
+Making Generic Relations work/look like !ForeignKeys: When editing a Generic Relation, you first choose the Content Type and then the Object-ID. With Grappelli, you instantly get the related object displayed right near the Object-ID.
+
+===All you have to do is add a js to your Admin===
+{{{
+class MyModelOptions(admin.ModelAdmin):
+    ...
+    class Media:
+        js = [
+            '/media/admin/js/admin/Generic.js',
+        ]
+}}}
+
+*The original implementation of the Position-Field is done by Joel Watts. For more details, please take a look at* http://code.google.com/p/django-positions/. (Thanks Joel for letting me use your work).
