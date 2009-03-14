@@ -1,3 +1,5 @@
-#What others are saying about Grappelli.
+If you wrote an article/review about Grappelli, please let us know ...
+
+=Articles/Reviews=
 
 2008-09-23 [http://avalonstar.com/blog/2008/sep/23/first-look-django-grappelli/ A first look at django-grappelli] (by avalonstar)
