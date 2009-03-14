@@ -10,6 +10,4 @@ Use *shortcuts.html* to place links for the most common pages. This can be a lin
 
 ==Navigation==
 
-Use *navigation.html* to present all sub-pages available within the Admin-Interface as well as external sites connected with your project (e.g. links to your Projectmanagement or to your Statistics App, ...). 
-
-  * Open /templates/admin/includes_grappelli/navigation.html and change it.
+Use "Navigation" in "Grappelli" to define and change your user-related Sidebar Items.
