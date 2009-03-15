@@ -4,9 +4,7 @@ With Grappelli, you get 2 additional Navigation Areas:
 
 ==Shortcuts==
 
-Use *shortcuts.html* to place links for the most common pages. This can be a link to an Application or a link to a commonly used !ChangeList or whatever you´d like to have here ...
-
-  * Open /templates/admin/includes_grappelli/shortcuts.html and change it.
+The *Shortcuts* are user-defined bookmarks. Each user can add/remove specific admin-pages to this area. As a superuser, you can manage all shortcuts.
 
 ==Sidebar Navigation==
 
