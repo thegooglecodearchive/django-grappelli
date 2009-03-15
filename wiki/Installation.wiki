@@ -1,6 +1,6 @@
 =Installation=
 
-There are several ways of Installing Grappelli, depending on the location of your media-files and templates: Basically, you just have to replace Djangos /admin/media/ and /admin/templates/-directory. Note that if you are using an svn checkout of Django, replacing the directories will break future svn updates. Therefore, we suggest using the latest official release (which is 1.0.2).
+*Note that if you are using an svn checkout of Django, replacing the directories will break future svn updates. Therefore, we suggest using the latest official release (which is 1.0.2).*
 
   # *Download Grappelli*
     Install Grappelli anywhere on your python-path.
