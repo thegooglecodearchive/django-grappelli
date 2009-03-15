@@ -5,6 +5,7 @@ With using Grappelli, you get the option to (re)order edit-lines (Stacked & Tabu
 *This is achieved with pure javascript (JQuery) - since Django doesn´t support re-ordering inlines, this is currently the only possiblity.*
 
 Please Note that the order-field must not have a *default-attribute*, because it prevents the reordering.
+Take a look at the Navigation-Model to get a better idea of how this is supposed to work.
 
 ===Add an Order-Field to your inline-related Model===
 {{{
