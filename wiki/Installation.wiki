@@ -20,6 +20,11 @@ INSTALLED_APPS = (
 {{{
 python manage.py syncdb
 }}}
+  # *Optional: Load Fixtures for Navigation*
+    It´s recommended to load some initial data for the Sidebar Navigation.
+{{{
+python manage.py loaddata grappelli_navigation.json --settings=settings
+}}}
   # *Copy media*
     Copy the folder /media/ to your admin media-directory. Alternatively, you might want to use a symlink.
 {{{
