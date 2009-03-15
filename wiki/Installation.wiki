@@ -15,6 +15,11 @@ INSTALLED_APPS = (
     'grappelli',
 )
 }}}
+  # *Change urls.py*
+    Add Grappelli to your url-definitions.
+{{{
+(r'^grappelli/', include('grappelli.urls')),
+}}}
   # *Sync your Database*
     Run the Django 'syncdb' command to create the appropriate tables.
 {{{
