@@ -1,9 +1,20 @@
-=Using "collapse-open" and "collapse-closed"=
+== search_fields_verbose ==
+
+In order to actually _*see*_ what you´re searching for within a Change-List, you can define *search_fields_verbose*.
+{{{
+class EntryOptions(admin.ModelAdmin):
+    ...
+    search_fields = ['id', 'title', 'subtitle', 'pub_date']
+    search_fields_verbose = ['ID', 'Title', 'Subtitle', 'Publication Date']
+    ...
+}}}
+
+=="collapse-open", "collapse-closed"==
 
 With using Grappelli, you get new classes for displaying fieldsets in the Admin-Interface. With *"collapse-open"*, the headline of the fieldset is collapsible and open by default. With *"collapse-closed"*, the headline of the fieldset is collapsible but closed by default. Without using a class, the fieldset won´t be collapsible.
 {{{
 class EntryOptions(admin.ModelAdmin):
-    ....
+    ...
     fieldsets = (
         ('', {
             'fields': ('title', 'subtitle', 'slug', 'pub_date', 'status',),
@@ -29,5 +40,5 @@ class EntryOptions(admin.ModelAdmin):
         }),
     )
     class Media:
-        ....
+        ...
 }}}
