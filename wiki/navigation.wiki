@@ -1,14 +1,14 @@
 =Customizing Navigation Areas=
 
 With Grappelli, you get 2 additional Navigation Areas:
-  # The *Shortcuts* at the top of every page - right beside the title.
+  # The *Bookmarks* at the top of every page - right beside the title.
   # The *Sidebar Navigation* at the Admin-Interface main page.
 
-==Shortcuts==
+==Bookmarks==
 
-The *Shortcuts* are user-defined bookmarks. Each user can add/remove specific admin-pages to this area and manage his/her Shortcuts.
+Each user can add/remove specific admin-pages to this area and manage his/her Bookmarks.
 
-As a superuser, you can manage all shortcuts.
+As a superuser, you can manage all Bookmarks.
 
 ==Sidebar Navigation==
 
