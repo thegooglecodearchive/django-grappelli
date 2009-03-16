@@ -1,3 +1,5 @@
+=Customizing Navigation Areas=
+
 With Grappelli, you get 2 additional Navigation Areas:
   # The *Shortcuts* at the top of every page - right beside the title.
   # The *Sidebar Navigation* at the Admin-Interface main page.
