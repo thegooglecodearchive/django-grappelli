@@ -1,14 +1,11 @@
 = Available Settings =
 
-All Settings can be defined in your projects settings-file (settings.py) or the !FileBrowsers settings-file (fb_settings.py). When using the projects settings-file, you have to use the prefix "FILEBROWSER_" for every setting (e.g. FILEBROWSER_PATH_SERVER instead of PATH_SERVER).
+All Settings can be defined in your projects settings-file (settings.py) or the Grappelli settings-file (settings.py). When using the projects settings-file, you have to use the prefix "GRAPPELLI_" for every setting (e.g. GRAPPELLI_ADMIN_TITLE instead of ADMIN_TITLE).
 
 ----
-==== URL_WWW ====
-The location of your media-files. This is the base URL for all your media-files accessible for the !FileBrowser.
+==== ADMIN_TITLE ====
+The Site Title of your Admin-Interface. Change this instead of changing index.html.
 {{{
-URL_WWW = getattr(settings, "FILEBROWSER_URL_WWW", '/media/uploads/')
+ADMIN_TITLE = getattr(settings, "GRAPPELLI_ADMIN_TITLE", 'Grappelli')
 }}}
-Note: When you set URL_WWW to settings.MEDIA_URL you can use all your media-files with the !FileBrowser. Nevertheless, you may want to limit this to a subdirectory of settings.MEDIA_URL or a seperate media-server.
-
-*Important: If you change this setting, you should also change PATH_SERVER.*
 ----
