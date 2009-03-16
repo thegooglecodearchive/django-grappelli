@@ -4,10 +4,12 @@ With Grappelli, you get 2 additional Navigation Areas:
 
 ==Shortcuts==
 
-The *Shortcuts* are user-defined bookmarks. Each user can add/remove specific admin-pages to this area. As a superuser, you can manage all shortcuts.
+The *Shortcuts* are user-defined bookmarks. Each user can add/remove specific admin-pages to this area and manage his/her Shortcuts.
+
+As a superuser, you can manage all shortcuts.
 
 ==Sidebar Navigation==
 
-The *Sidebar Navigation* can contain all different sections within your admin-site as well as links to external ressources. Please be aware that you have to *manually assign Editors* to each of the Navigation Items (because not every Editor needs the same Navigation).
+The *Sidebar Navigation* can/should contain all different sections/applications of your admin-site as well as links to external ressources. Please be aware that you have to *manually assign Editors* to each of the Navigation Items (because not every Editor needs the same Navigation).
 
-Take a look at the fixtures to get a better idea of what´s this about. 
+Load the fixtures to get a better idea of what´s this about.
