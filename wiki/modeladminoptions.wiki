@@ -13,7 +13,7 @@ class EntryOptions(admin.ModelAdmin):
     ...
 }}}
 
-=="collapse-open", "collapse-closed"==
+==collapse-open, collapse-closed==
 
 There are two new classes for displaying fieldsets in the Admin-Interface. With *"collapse-open"*, the headline of the fieldset is collapsible and open by default. With *"collapse-closed"*, the headline of the fieldset is collapsible but closed by default. Without using a class, the fieldset won´t be collapsible.
 {{{
