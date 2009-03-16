@@ -1,3 +1,7 @@
+=!ModelAdmin Options=
+
+With Grappelli, you get some additional attributes for defining your !ModelAdmin.
+
 == search_fields_verbose ==
 
 In order to actually _*see*_ what you´re searching for within a Change-List, you can define *search_fields_verbose*.
