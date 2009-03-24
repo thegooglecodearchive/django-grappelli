@@ -7,3 +7,5 @@
 }}}
   # *Optional: Change tinymce_setup.js*
     Open tinymce_setup.js and adjust the setup/behaviour of TinyMCE according to your needs - see http://wiki.moxiecode.com/index.php/TinyMCE:Configuration
+
+[http://vonautomatisch.at/media/uploads/grappelli/tinymce.jpg]
