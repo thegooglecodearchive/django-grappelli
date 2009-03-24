@@ -1,3 +1,6 @@
 =!ForeignKeys, Related Lookups=
 
 When entering a value (ID) for a !ForeignKey, the related object is instantly displayed right beside the input-field (after the search-icon).
+
+
+[http://vonautomatisch.at/media/uploads/grappelli/foreignkey_relatedlookup.jpg]
