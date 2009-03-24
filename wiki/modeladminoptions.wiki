@@ -4,6 +4,8 @@ With Grappelli, you get some additional attributes for defining your !ModelAdmin
 
 == search_fields_verbose ==
 
+[http://vonautomatisch.at/media/uploads/grappelli/search_fields.jpg]
+
 In order to actually _*see*_ what you´re searching for within a Change-List, you can define *search_fields_verbose*.
 {{{
 class EntryOptions(admin.ModelAdmin):
@@ -14,6 +16,8 @@ class EntryOptions(admin.ModelAdmin):
 }}}
 
 ==collapse-open, collapse-closed==
+
+[http://vonautomatisch.at/media/uploads/grappelli/collapsed_fields.jpg]
 
 There are two new classes for displaying fieldsets in the Admin-Interface. With *"collapse-open"*, the headline of the fieldset is collapsible and open by default. With *"collapse-closed"*, the headline of the fieldset is collapsible but closed by default. Without using a class, the fieldset won´t be collapsible.
 {{{
