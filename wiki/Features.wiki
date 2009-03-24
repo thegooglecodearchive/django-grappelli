@@ -5,6 +5,7 @@ Basically, Grappelli gives you a new look & feel for the Django Admin-Interface.
   * *Enhanced Collapsibles*
   * *Reordering (Drag & Drop) for Edit-inlines (Stacked & Tabular)*
   * *Visual Generic Relationships*
+  * *Relations (!ForeignKeys) are instantly displayed beside the input-field*
   * *!PositionField*
   * *Grappelli TinyMCE Skin*
   * *Integration with the [http://code.google.com/p/django-filebrowser/ Django FileBrowser]*
