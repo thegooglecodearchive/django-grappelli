@@ -2,6 +2,8 @@
 
 Making Generic Relations work/look like !ForeignKeys: When editing a Generic Relation, you first choose the Content Type and then the Object-ID. With Grappelli, you instantly get the related object displayed right near the Object-ID.
 
+[http://vonautomatisch.at/media/uploads/grappelli/generic_relation.jpg]
+
 ===All you have to do is add a js to your Admin===
 {{{
 class MyModelOptions(admin.ModelAdmin):
