@@ -10,7 +10,7 @@ ADMIN_TITLE = getattr(settings, "GRAPPELLI_ADMIN_TITLE", 'Grappelli')
 }}}
 ----
 ==== ADMIN_URL ====
-The URL to your admin-installation. Necessary in order to get the right URLs - in my opinion, this is a bug with the current version of django.
+The URL to your admin-installation. Necessary in order to get the right URLs for related lookups registered to different admin site objects.
 {{{
 ADMIN_URL = getattr(settings, "GRAPPELLI_ADMIN_URL", 'admin')
 }}}
