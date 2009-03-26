@@ -15,6 +15,13 @@ INSTALLED_APPS = (
     'grappelli',
 )
 }}}
+  # *Add ADMIN_URL context-processor*
+    Open your projects settings-file (settings.py) and add the ADMIN_URL context-processor. This is necessary to get the right URLs for related lookups (if the related object is registered with a different admin site object).
+{{{
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "grappelli.context_processors.admin_url",
+)
+}}}
   # *Change urls.py*
     Add Grappelli to your url-definitions.
 {{{
