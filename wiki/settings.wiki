@@ -9,3 +9,9 @@ The Site Title of your Admin-Interface. Change this instead of changing index.ht
 ADMIN_TITLE = getattr(settings, "GRAPPELLI_ADMIN_TITLE", 'Grappelli')
 }}}
 ----
+==== ADMIN_URL ====
+The URL to your admin-installation. Necessary in order to get the right URLs - in my opinion, this is a bug with the current version of django.
+{{{
+ADMIN_URL = getattr(settings, "GRAPPELLI_ADMIN_URL", 'admin')
+}}}
+----
