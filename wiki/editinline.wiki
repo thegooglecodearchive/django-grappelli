@@ -8,6 +8,9 @@ Please Note that the order-field must not have a *default-attribute*, because it
 Take a look at the [http://code.google.com/p/django-grappelli/source/browse/trunk/models/navigation.py Navigation-Model] to get a better idea of how this is supposed to work.
 
 ===Add an Order-Field to your inline-related Model===
+
+It´s currently necessary to name that field "order". Moreover, you must not use a "verbose name" for that field. 
+
 {{{
 class PhotoGallery(models.Model):
     ...
