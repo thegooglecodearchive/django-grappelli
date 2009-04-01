@@ -27,6 +27,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 {{{
 (r'^grappelli/', include('grappelli.urls')),
 }}}
+  # *Change grappelli/settings.py*
+    Take a look at the available grappelli-settings and change them (if needed).
   # *Sync your Database*
     Run the Django 'syncdb' command to create the appropriate tables.
 {{{
