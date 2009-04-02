@@ -6,7 +6,7 @@ With Grappelli, you get some additional attributes for defining your !InlineMode
 
 [http://vonautomatisch.at/media/uploads/grappelli/collapsed_fields.jpg]
 
-There are two new classes for displaying fieldsets in the Admin-Interface. With *"collapse-open"*, the headline of the fieldset is collapsible and open by default. With *"collapse-closed"*, the headline of the fieldset is collapsible but closed by default. Without using a class, the fieldset won´t be collapsible.
+You have two options for displaying inline-groups. With *"collapse-open"*, the inline-group is collapsible and open by default. With *"collapse-closed"*, the inline-group is collapsible but closed by default. Without using a class, the inline-group won´t be collapsible.
 {{{
 class EntryOptions(admin.ModelAdmin):
     ...
