@@ -8,32 +8,7 @@ With Grappelli, you get some additional attributes for defining your !InlineMode
 
 You have two options for displaying inline-groups. With *"collapse-open"*, the inline-group is collapsible and open by default. With *"collapse-closed"*, the inline-group is collapsible but closed by default. Without using a class, the inline-group won´t be collapsible.
 {{{
-class EntryOptions(admin.ModelAdmin):
+class EntryItemOptions(admin.InlineModelAdmin):
     ...
-    fieldsets = (
-        ('', {
-            'fields': ('title', 'subtitle', 'slug', 'pub_date', 'status',),
-        }),
-        ('Flags', {
-            'classes': ('collapse-closed',),
-            'fields' : ('flag_front', 'flag_sticky', 'flag_allow_comments', 'flag_comments_closed',),
-        }),
-        ('Tags', {
-            'classes': ('collapse-closed',),
-            'fields' : ('tags',),
-        }),
-        ('Image', {
-            'fields' : ('image',),
-        }),
-        ('Content', {
-            'classes': ('collapse-open',),
-            'fields' : ('summary', 'body',),
-        }),
-        ('Author', {
-            'classes': ('collapse-closed',),
-            'fields' : ('author',),
-        }),
-    )
-    class Media:
-        ...
+    classes: ('collapse-closed',),
 }}}
