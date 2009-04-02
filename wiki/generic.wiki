@@ -4,14 +4,4 @@ Making Generic Relations work/look like !ForeignKeys: When editing a Generic Rel
 
 [http://vonautomatisch.at/media/uploads/grappelli/generic_relation.jpg]
 
-===All you have to do is add a js to your Admin===
-{{{
-class MyModelOptions(admin.ModelAdmin):
-    ...
-    class Media:
-        js = [
-            '/media/admin/js/admin/Generic.js',
-        ]
-}}}
-
-*The original scripts are by Weston Nielson. For more details, please take a look at* http://code.google.com/p/django-genericadmin/.
+*Thanks to Weston Nielson (http://code.google.com/p/django-genericadmin/) for his inspiration*.
