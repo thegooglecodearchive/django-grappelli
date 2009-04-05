@@ -6,17 +6,22 @@ We have tested the new functionality for Edit-Inlines very carefully. Of course,
 
 The Model includes !ForeignKeys as well as Generic Relations, Input-Fields, Selects and Checkboxes.
 
-  * *Delete one Item:* xxx
-  * *Delete multiple Items:* xxx
-  * *Move one Item:* xxx
-  * *Move multiple Items:* xxx
-
+  * *Delete Items:* xxx
+  * *Move Items:* xxx
+  * *Add Items:* xxx
+  * *Delete and Move Items:* xxx
+  * *Delete and Add Items:* xxx
+  * *Move and Add Items:* xxx
+  * *Delete, Move and Add Items:* xxx
 
 ===Stacked===
 
 The Model includes !ForeignKeys as well as Generic Relations, Input-Fields, Selects and Checkboxes. We´ve also included TinyMCE for testing Stacked-Inlines.
 
-  * *Delete one Item:* xxx
-  * *Delete multiple Items:* xxx
-  * *Move one Item:* xxx
-  * *Move multiple Items:* xxx
+  * *Delete Items:* xxx
+  * *Move Items:* xxx
+  * *Add Items:* xxx
+  * *Delete and Move Items:* xxx
+  * *Delete and Add Items:* xxx
+  * *Move and Add Items:* xxx
+  * *Delete, Move and Add Items:* xxx
