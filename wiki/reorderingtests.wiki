@@ -1,0 +1,20 @@
+=Test for Reordering Edit-Inlines=
+
+We have tested the new functionality for Edit-Inlines very carefully. Of course, there could still be some cases where errors occur. Therefore, we´ve put together a list of tests we are running on a regular basis.
+
+===Tabular===
+
+The Model includes !ForeignKeys as well as Generic Relations, Input-Fields, Selects and Checkboxes.
+
+  * *Delete one Item:* xxx
+  * *Delete multiple Items:* xxx
+  * *Move one Item:* xxx
+  * *Move multiple Items:* xxx
+
+
+===Stacked===
+
+  * *Delete one Item:* xxx
+  * *Delete multiple Items:* xxx
+  * *Move one Item:* xxx
+  * *Move multiple Items:* xxx
