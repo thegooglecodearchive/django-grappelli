@@ -7,7 +7,7 @@ We have tested the new functionality for Edit-Inlines very carefully. Of course,
 The Model includes !ForeignKeys as well as Generic Relations, Input-Fields, Selects and Checkboxes.
 
   * *Delete Items:* works
-  * *Move Items:* works
+  * *Move Items:* works only if items are not moved beyond extra-items.
   * *Add Items:* xxx
   * *Delete and Move Items:* xxx
   * *Delete and Add Items:* xxx
