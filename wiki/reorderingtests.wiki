@@ -14,6 +14,8 @@ The Model includes !ForeignKeys as well as Generic Relations, Input-Fields, Sele
 
 ===Stacked===
 
+The Model includes !ForeignKeys as well as Generic Relations, Input-Fields, Selects and Checkboxes. We´ve also included TinyMCE for testing Stacked-Inlines.
+
   * *Delete one Item:* xxx
   * *Delete multiple Items:* xxx
   * *Move one Item:* xxx
