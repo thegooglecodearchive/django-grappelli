@@ -1,0 +1,26 @@
+=Django Issues=
+
+There are some known problems with the Django admin-interface. I´m going to list them here in order to avoid confusion (because the problems are not related to Grappelli whatsoever).
+
+If you think there´s something missing here, please drop me an email.
+
+==Reordering Edit-Inlines==
+
+Because in case of errors, formsets are not returned in the right order, reordering inlines is currently not possible.
+_Does not seem to be solved in the near future._
+
+==Translating App Names==
+
+It´s not possible to translate the names of apps within the admin-interface which leads to a strange language mix (esp. on the index page).
+_There´s already a ticket and this should be solved soon._
+
+==The Admin Index Site==
+
+Currently, the admin index site reflects the structure of your applications/models. I don´t think editors (who use the admin site) are interested in the structure of the application. What they want is the most reasonable list of models, divided into different sections (not necessarily apps).
+_Not sure if this will ever be solved._
+
+==Admin Site Objects and Related Lookups==
+
+If you use different Admin Site Objects, you have to register every (!) related model within ever site object you want to use that model for. The problem here is somehow similar to the one mentioned before: Editors are just not interested in the underlying structure and still, they are forced to deal with it.
+_Not sure this is considered a bug by the django developers._
+
