@@ -8,7 +8,8 @@ With Grappelli, you get some additional attributes for defining your !InlineMode
 
 You have two options for displaying inline-groups. With *"collapse-open"*, the inline-group is collapsible and open by default. With *"collapse-closed"*, the inline-group is collapsible but closed by default. Without using a class, the inline-group won´t be collapsible.
 {{{
-class EntryItemOptions(admin.InlineModelAdmin):
+class NavigationItemInline(admin.StackedInline):
+    
+    classes = ('collapse-open',)
     ...
-    classes: ('collapse-closed',),
 }}}
