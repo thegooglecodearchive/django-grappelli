@@ -1,0 +1,3 @@
+=Updates=
+
+There are some known problems with the Django admin-interface. I´m going to list them here in order to avoid confusion (because the problems are not related to Grappelli whatsoever).
