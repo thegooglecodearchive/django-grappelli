@@ -4,7 +4,7 @@ With Grappelli, you get some additional attributes for defining your !InlineMode
 
 ==collapse-open, collapse-closed==
 
-[http://vonautomatisch.at/media/uploads/grappelli/collapsed_fields.jpg]
+[http://vonautomatisch.at/media/uploads/grappelli/collapsed_fields_inline.jpg]
 
 You have two options for displaying inline-groups. With *"collapse-open"*, the inline-group is collapsible and open by default. With *"collapse-closed"*, the inline-group is collapsible but closed by default. Without using a class, the inline-group won´t be collapsible.
 {{{
