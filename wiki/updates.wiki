@@ -1,3 +1,14 @@
 =Updates=
 
-There are some known problems with the Django admin-interface. I´m going to list them here in order to avoid confusion (because the problems are not related to Grappelli whatsoever).
+  * *2009-03-26:* Added M2M Related Lookup, see [http://code.google.com/p/django-grappelli/wiki/relatedlookups Related Lookups].
+  * *2009-03-26:* Added admin_url context-processor, updated "Available Settings" and "Installation".
+  * *2009-03-24:* Related objects are now automatically displayed right beside the input-field, see [http://code.google.com/p/django-grappelli/wiki/relatedlookups Related Lookups].
+  * *2009-03-16:* Added page-related help-section.
+  * *2009-03-16:* Added search_fields_verbose, see [http://code.google.com/p/django-grappelli/wiki/modeladminoptions ModelAdmin Options] for more details.
+  * *2009-03-15:* Simplified TinyMCE-Setup (because the skin for TinyMCE is a real "skin" now).
+  * *2009-03-15:* Added User-related Shortcuts.
+  * *2009-03-15:* Changed the Installation process. Grappelli needs to be added to your INSTALLED_APPS in order to use the Navigation Area. See [http://code.google.com/p/django-grappelli/wiki/Installation Installation] for more details.
+  * *2009-03-14:* Items for Sidebar Navigation (Admin Index Site) are read from the database - no need to change navigation.html anymore.
+  * *2009-03-14:* Added Position-Field to Grappelli ... thanks to Joel Watts.
+  * *2009-03-14:* Visual Generic Relationships ... thanks to Weston Nielson.
+  * *2008-11-25:* Refactored Tabular Inline in order to make it work like Stacked Inlines. Drag & Drop should work fine now ...
