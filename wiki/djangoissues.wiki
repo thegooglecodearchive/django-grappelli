@@ -27,4 +27,4 @@ _Not sure this is considered a bug by the django developers._
 ==Searching Generic Relations==
 
 It´s not possible to use a "content_object" within the search_fields. As far as I know, there´s no workaround.
-_Probably won´t be solved._
+_I´m not sure if this will be solved._
