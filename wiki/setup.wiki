@@ -12,4 +12,4 @@ So, what actually _is_ your *Main Admin Site*? It´s the Admin Site Object where
 
 ==Defining Generic Relations==
 
-In order to use *Visual Generic Relationships*, you have to use the names _content_type_ and _object_id_ for defining generic relations, see [http://code.google.com/p/django-grappelli/wiki/relatedlookups Generic Relationships] for more on this issue.
+In order to use *Visual Generic Relationships*, you have to use the names _content_type_ and _object_id_ for defining generic relations, see [http://code.google.com/p/django-grappelli/wiki/generic Generic Relationships] for more on this issue.
