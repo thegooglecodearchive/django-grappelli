@@ -11,3 +11,4 @@ Basically, Grappelli gives you a new look & feel for the Django Admin-Interface.
   * *Integration with the [http://code.google.com/p/django-filebrowser/ Django FileBrowser]*
   * Additional Navigation Area on the Index-Site
   * User-related Bookmarks in the Header-Section
+  * Help/Documentation for Editors.
