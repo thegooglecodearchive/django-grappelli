@@ -1,6 +1,6 @@
 =Setup=
 
-For using Grappelli, you have to ...
+For using Grappelli, you have to follow some rules when it comes to your projects setup.
 
 ==Registering Models==
 
