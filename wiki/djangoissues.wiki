@@ -23,7 +23,7 @@ _Not sure if this will ever be solved._
 
 If you use different Admin Site Objects, you have to register every (!) related model within ever site object you want to use that model for. The problem here is somehow similar to the one mentioned before: Editors are just not interested in the underlying structure and still, they are forced to deal with it.
 Instead of customizing _every_ adminsite index template, Grappelli assumes that you registered _all_ models with your main adminsite.
-_This is not considered a bug by the django developers. So it won´t be solved._
+_This is not considered a bug by the django developers. So, it probably won´t be solved._
 
 ==Searching Generic Relations==
 
