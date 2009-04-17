@@ -15,10 +15,12 @@ INSTALLED_APPS = (
     'grappelli',
 )
 }}}
-  # *Add ADMIN_URL context-processor*
-    Open your projects settings-file (settings.py) and add the ADMIN_URL context-processor. This is necessary to get the right URLs for related lookups (if the related object is registered with a different admin site object).
+  # *Add context-processors*
+    Open your projects settings-file (settings.py) and add the ADMIN_URL context-processor. This is necessary to get the right URLs for related lookups (if the related object is registered with a different admin site object). In order to use "Bookmarks" you also have to add the _request context processor_. The _authentication context processor_ is needed for the admin-interface anyway.
 {{{
 TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.core.context_processors.auth",
+    "django.core.context_processors.request",
     "grappelli.context_processors.admin_url",
 )
 }}}
