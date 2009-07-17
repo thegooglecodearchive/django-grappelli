@@ -2,7 +2,7 @@
 
 There are some known problems with the Django admin-interface. I´m going to list them here in order to avoid confusion (because the problems are not related to Grappelli whatsoever).
 
-If you think there´s something missing here, please drop me an email.
+If you think there´s something missing here (or if an Issue has been resolved), please drop me an email.
 
 ==Reordering Edit-Inlines==
 
@@ -29,3 +29,7 @@ Instead of customizing _every_ adminsite index template, Grappelli assumes that 
 
 It´s not possible to use a "content_object" within the search_fields. As far as I know, there´s no workaround.<br>
 (_I´m not sure if this will be solved.)_
+
+==Messages in Admin==
+
+It´s currently not possible to distinguish between Success- and Error-Messages when Redirecting.
