@@ -66,6 +66,13 @@ cp -R /path/to/grappelli/media /path/to/your/media/admin
 {{{
 cp -R /path/to/grappelli/templates /path/to/your/templates
 }}}
+    In order to overwrite the original admin-templates you need to make sure that your TEMPLATE_LOADERS are looking at the Filesystem first:
+{{{
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.load_template_source',
+    'django.template.loaders.app_directories.load_template_source',
+)
+}}}
 ----
 <br>
 =Setup & Functionality=
