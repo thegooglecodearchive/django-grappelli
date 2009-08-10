@@ -1,4 +1,6 @@
-This page is a preliminary documentation on Version 2.0 of Grappelli. The behaviour can slightly change within the next couple of weeks.<br><br>
+This page is a preliminary documentation on Version 2.0 of Grappelli. The behaviour can slightly change within the next couple of weeks.<br>
+*Feedback is very much appreciated.*
+<br><br>
 ----
 <br>
 =Release Notes=
@@ -58,3 +60,8 @@ python manage.py loaddata grappelli_navigation.json --settings=settings
 {{{
 cp -R /path/to/grappelli/media /path/to/your/admin/media
 }}}
+----
+<br>
+=Setup & Functionality=
+
+Please take a look at the other Wiki-Pages. What´s described there should still be valid.
