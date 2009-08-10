@@ -5,7 +5,7 @@ This page is a preliminary documentation on Version 2.0 of Grappelli. The behavi
 Here´s a list with the most important changes:
   * Refactored Stylesheets (including re-writing lots of stuff).
   * CSS cleanup (decoupled styles from Djangos original stylesheets).
-  * Removed all Backgound-Images (excluding Icons). Note: With using Safari, you still have the option of Gradients.
+  * Removed all Background-Images (excluding Icons). Note: With using Safari, you still have the option of Gradients.
   * Removed almost every !important within Stylesheets.
   * Some Template Changes: Most notable within the Changelist, where we´ve decided to move all Search/Filter functions to the Sidebar.
   * Icon Updates.
