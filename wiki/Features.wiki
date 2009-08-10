@@ -1,9 +1,8 @@
 Basically, Grappelli gives you a new look & feel for the Django Admin-Interface.
 
 =Features=
-  * *New/Improved Look & Feel*
+  * *Improved Look & Feel*
   * *Enhanced Collapsibles*
-  * *Reordering (Drag & Drop) for Edit-inlines (Stacked & Tabular)*
   * *Visual Generic Relationships*
   * *Relations (!ForeignKeys, M2M) are instantly displayed beside the input-field*
   * *!PositionField*
