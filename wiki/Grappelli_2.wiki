@@ -1,0 +1,37 @@
+=Installation=
+
+  # *Download Grappelli*
+    Install Grappelli anywhere on your python-path.
+{{{
+svn checkout http://django-grappelli.googlecode.com/svn/branches/grappelli_2 grappelli
+}}}
+  # *Add Grappelli to your INSTALLED APPS*
+    Open your projects settings-file (settings.py) and add Grappelli to your INSTALLED APPS.
+{{{
+INSTALLED_APPS = (
+    ...
+    'grappelli',
+)
+}}}
+  # *Change urls.py*
+    Add Grappelli to your url-definitions.
+{{{
+(r'^grappelli/', include('grappelli.urls')),
+}}}
+  # *Change grappelli/settings.py*
+    Take a look at the available grappelli-settings and change them (if needed).
+  # *Sync your Database*
+    Run the Django 'syncdb' command to create the appropriate tables.
+{{{
+python manage.py syncdb
+}}}
+  # *Optional: Load Fixtures*
+    It´s recommended to load some initial data.
+{{{
+python manage.py loaddata grappelli_navigation.json --settings=settings
+}}}
+  # *Copy media*
+    Copy the folder /media/ to your admin media-directory. Alternatively, you might want to use a symlink. Note: If possible, avoid using /django/contrib/admin/media/ as your admin media directory.
+{{{
+cp -R /path/to/grappelli/media /path/to/your/admin/media
+}}}
