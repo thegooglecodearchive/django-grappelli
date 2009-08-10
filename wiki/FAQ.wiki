@@ -1,7 +1,3 @@
-This is a list of frequently asked questions. If your question is not being answered, use the Django Users Google-Group (http://groups.google.com/group/django-users) or open a ticket. 
-
-= FAQ =
-
 *Why Grappelli?*
 
 From our point of view, the Admin-Interface is one of the most important things for clients/customers and therefore it should just look amazing.
