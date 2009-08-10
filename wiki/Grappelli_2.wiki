@@ -15,6 +15,7 @@ Here´s a list with the most important changes:
   * Updated to work with Django 1.1.
   * Removed the need for additional context-processors.
   * Updated Bookmark functionality.
+  * Cancel-Button on delete confirmation.
 
 Still TODO:
   * Styling the Documentation.
