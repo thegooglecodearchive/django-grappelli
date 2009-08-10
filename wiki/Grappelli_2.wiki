@@ -56,9 +56,14 @@ python manage.py syncdb
 python manage.py loaddata grappelli_navigation.json --settings=settings
 }}}
   # *Copy media*
-    Copy the folder /media/ to your admin media-directory. Alternatively, you might want to use a symlink. Note: If possible, avoid using /django/contrib/admin/media/ as your admin media directory.
+    Copy the folder /media/ to your admin media-directory. Alternatively, you might want to use a symlink. Note: If possible, avoid using /django/contrib/admin/media/ as your admin media directory (since it will break future django-updates).
 {{{
 cp -R /path/to/grappelli/media /path/to/your/admin/media
+}}}
+  # *Copy Templates*
+    Copy the folder /templates/ to your admin template-directory. Alternatively, you might want to use a symlink. Note: If possible, avoid using /django/contrib/admin/templates/ as your admin template directory (since it will break future django-updates).
+{{{
+cp -R /path/to/grappelli/templates /path/to/your/admin/templates
 }}}
 ----
 <br>
