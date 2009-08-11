@@ -22,6 +22,7 @@ Still TODO:
   * Styling the Help-Section.
   * Update Change-Password Site as well as Login/Logout.
   * Some js-cleanup.
+  * Translation/i18n.
   * Testing.
 <br>
 ----
