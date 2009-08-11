@@ -2,6 +2,10 @@ This page is a preliminary documentation on Version 2.0 of Grappelli. The behavi
 *Feedback is very much appreciated.*
 <br><br>
 ----
+=Django Issues=
+There´s a whole lot of unresolved Django Issues concerning the Admin-Interface. I´ve listed just a couple of issues [djangoissues here]. E.g., don´t blame us if you don´t see a Unicode representation near an M2M raw-id-field.
+<br>
+----
 <br>
 =Release Notes=
 Here´s a list with the most important changes:
