@@ -26,6 +26,11 @@ Still TODO:
 <br>
 ----
 <br>
+=Requirements=
+  * Django 1.1
+<br>
+----
+<br>
 =Installation=
 
   # *Download Grappelli*
@@ -80,6 +85,7 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.app_directories.load_template_source',
 )
 }}}
+<br>
 ----
 <br>
 =Setup & Functionality=
