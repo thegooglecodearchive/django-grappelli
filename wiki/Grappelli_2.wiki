@@ -70,14 +70,14 @@ python manage.py loaddata grappelli_help.json --settings=settings
   # *Copy media*
     Copy the Contents of folder /media/ to your media-directory. Alternatively, you might want to use a symlink.
 {{{
-cp -R /path/to/grappelli/media /path/to/your/media/admin
+cp -R /path/to/grappelli/media /path/to/your/media admin
 }}}
     _ Note: If possible, avoid using /django/contrib/admin/media/ as your media directory (since it will break future django-updates)._<br>
     _If your ADMIN_MEDIA_PREFIX is /media/admin/ (for example), you need a directory   "admin" within your media-directory. Inside of /admin/, you need all files available with Grappelli._
-  # *Copy Templates*
-    Copy the folder /templates/ to your template-directory.
+  # *Copy Admin-Templates*
+    Copy the folder /templates/admin to your template-directory.
 {{{
-cp -R /path/to/grappelli/templates /path/to/your/templates
+cp -R /path/to/grappelli/templates/admin /path/to/your/templates admin
 }}}
     In order to overwrite the original admin-templates you need to make sure that your TEMPLATE_LOADERS are looking at the Filesystem first:
 {{{
@@ -86,6 +86,7 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.app_directories.load_template_source',
 )
 }}}
+    _This step is necessary in order to overwrite Djangos Admin-Templates._
 <br>
 ----
 <br>
