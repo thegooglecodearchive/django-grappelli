@@ -33,3 +33,7 @@ It´s not possible to use a "content_object" within the search_fields. As far as
 ==Messages in Admin==
 
 It´s currently not possible to distinguish between Success- and Error-Messages when Redirecting.
+
+==M2M RawID Field has no Unicode representation==
+
+see http://code.djangoproject.com/ticket/10293
