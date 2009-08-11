@@ -21,6 +21,7 @@ Still TODO:
   * Styling the Documentation.
   * Styling the Help-Section.
   * Update Change-Password Site as well as Login/Logout.
+  * Some js-cleanup.
   * Testing.
 <br>
 ----
