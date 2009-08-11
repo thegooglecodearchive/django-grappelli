@@ -56,6 +56,7 @@ python manage.py syncdb
 {{{
 python manage.py loaddata grappelli_navigation.json --settings=settings
 }}}
+    Note that the Admin-Links within the Fixtures begin with /admin/ ... if your Admin-Interface is accessible via a different URL, you have to change this (either change the json-files before loading or change the URLs afterwards).
   # *Copy media*
     Copy the Contents of folder /media/ to your media-directory. Alternatively, you might want to use a symlink. Note: If possible, avoid using /django/contrib/admin/media/ as your media directory (since it will break future django-updates).
 {{{
