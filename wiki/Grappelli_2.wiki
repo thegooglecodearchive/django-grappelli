@@ -56,6 +56,7 @@ python manage.py syncdb
     It´s recommended to load some initial data.
 {{{
 python manage.py loaddata grappelli_navigation.json --settings=settings
+python manage.py loaddata grappelli_help.json --settings=settings
 }}}
     _Note that the Admin-Links within the Fixtures begin with /admin/ ... if your Admin-Interface is accessible via a different URL, you have to change this (either change the json-files before loading or change the URLs afterwards)._
   # *Copy media*
