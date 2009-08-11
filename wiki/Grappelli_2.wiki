@@ -51,18 +51,19 @@ INSTALLED_APPS = (
 {{{
 python manage.py syncdb
 }}}
+    _This will create the tables for Bookmarks, Help & Navigation._
   # *Optional: Load Fixtures*
     It´s recommended to load some initial data.
 {{{
 python manage.py loaddata grappelli_navigation.json --settings=settings
 }}}
-    Note that the Admin-Links within the Fixtures begin with /admin/ ... if your Admin-Interface is accessible via a different URL, you have to change this (either change the json-files before loading or change the URLs afterwards).
+    _Note that the Admin-Links within the Fixtures begin with /admin/ ... if your Admin-Interface is accessible via a different URL, you have to change this (either change the json-files before loading or change the URLs afterwards)._
   # *Copy media*
     Copy the Contents of folder /media/ to your media-directory. Alternatively, you might want to use a symlink. Note: If possible, avoid using /django/contrib/admin/media/ as your media directory (since it will break future django-updates).
 {{{
 cp -R /path/to/grappelli/media /path/to/your/media/admin
 }}}
-    If your ADMIN_MEDIA_PREFIX is /media/admin/ (for example), you need a directory   "admin" within your media-directory. Inside of /admin/, you need all files available with Grappelli.
+    _If your ADMIN_MEDIA_PREFIX is /media/admin/ (for example), you need a directory   "admin" within your media-directory. Inside of /admin/, you need all files available with Grappelli._
   # *Copy Templates*
     Copy the folder /templates/ to your template-directory.
 {{{
