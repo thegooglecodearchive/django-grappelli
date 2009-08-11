@@ -67,6 +67,14 @@ python manage.py loaddata grappelli_navigation.json --settings=settings
 python manage.py loaddata grappelli_help.json --settings=settings
 }}}
     _Note that the Admin-Links within the Fixtures begin with /admin/ ... if your Admin-Interface is accessible via a different URL, you have to change this (either change the json-files before loading or change the URLs afterwards)._
+  # *Add context-processors*
+    Open your projects settings-file (settings.py) and add the Grappelli context-processor. This is necessary to get the right URLs for related lookups (if the related object is registered with a different admin site object).
+{{{
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.core.context_processors.auth",
+    "grappelli.context_processors.admin",
+)
+}}}
   # *Copy media*
     Copy the Contents of folder /media/ to your media-directory. Alternatively, you might want to use a symlink.
 {{{
