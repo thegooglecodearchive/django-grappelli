@@ -1,3 +1,5 @@
+[http://vonautomatisch.at/media/uploads/grappelli/grappelli.jpg]
+
 ==Main Admin Site==
 
 Admin Index Site with additional Navigation Area and a Bookmark-Section in the Header.
