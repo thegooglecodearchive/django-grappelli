@@ -38,7 +38,7 @@ It´s currently not possible to distinguish between Success- and Error-Messages.
 
 see http://code.djangoproject.com/ticket/10293 ... the Patch provided there does work.
 
-== Popups and Actions/List_Editables==
+== Popups, Actions and list_editables==
 
 With the current version of Django, Actions are visible within popups but delete confirmation doesn´t handle popups correctly. Moreover, list_editables are also visible. From our point of view, editing elements shouldn´t be possible with popups.
 
