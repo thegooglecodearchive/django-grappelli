@@ -14,5 +14,7 @@ click to enlarge
 
 ==Change Form==
 
+The Changeform includes enhanced collapsibles, ajax-based related lookups for foreign-keys and M2M-fields as well as ajax-lookups for generic relationships. Also included with Grappelli is a custom theme for TinyMCE.
+
 [http://vonautomatisch.at/media/uploads/grappelli/changeform_big.jpg http://vonautomatisch.at/media/uploads/grappelli/changeform_thumb.jpg]<br>
 click to enlarge
