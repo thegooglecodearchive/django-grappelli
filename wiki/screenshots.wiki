@@ -1,9 +1,13 @@
 ==Main Admin Site==
 
+Admin Index Site with additional Navigation Area and a Bookmark-Section in the Header.
+
 [http://vonautomatisch.at/media/uploads/grappelli/index_big.jpg http://vonautomatisch.at/media/uploads/grappelli/index_thumb.jpg]<br>
 click to enlarge
 
 ==Change List==
+
+Within the Changelist, we moved the Searchbar as well as the Results to a Sidebar on the right hand side of the Screen. This was done in order to group elements with a simliar functionality. Moreover, the screen becomes more tidy (esp. when you use actions and list_editables). 
 
 [http://vonautomatisch.at/media/uploads/grappelli/changelist_big.jpg http://vonautomatisch.at/media/uploads/grappelli/changelist_thumb.jpg]<br>
 click to enlarge
