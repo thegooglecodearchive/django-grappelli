@@ -18,3 +18,11 @@ The Changeform includes enhanced collapsibles, ajax-based related lookups for fo
 
 [http://vonautomatisch.at/media/uploads/grappelli/changeform_big.jpg http://vonautomatisch.at/media/uploads/grappelli/changeform_thumb.jpg]<br>
 click to enlarge
+
+
+==Tabular Inlines==
+
+With Tabular Inlines you can add Inline-Elements with the Plus-Button and you also get a Delete-Button for every element.
+
+[http://vonautomatisch.at/media/uploads/grappelli/inlinetabular_big.jpg http://vonautomatisch.at/media/uploads/grappelli/inlinetabular_thumb.jpg]<br>
+click to enlarge
