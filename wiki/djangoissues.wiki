@@ -43,3 +43,9 @@ see http://code.djangoproject.com/ticket/10293 ... the Patch provided there does
 With the current version of Django, Actions are visible within popups but delete confirmation doesn´t handle popups correctly. Moreover, list_editables are also visible. From our point of view, editing elements shouldn´t be possible with popups.
 
 see http://code.djangoproject.com/ticket/11700
+
+== Admin Documentation==
+
+The document structure of the admin_doc templates is a mess (about every second template has a different structure). Therefore, we are not sure if it makes sense to style this section of the admin-interface.
+
+Moreover, all admin-views lead to an error.
