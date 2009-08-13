@@ -14,7 +14,7 @@ Here´s a list with the most important changes:
   * CSS cleanup (decoupled styles from Djangos original stylesheets).
   * Removed all Background-Images (excluding Icons). Note: With using Safari, you still have the option of Gradients.
   * Removed almost every !important within Stylesheets.
-  * Some Template Changes: Most notable within the Changelist, where we´ve decided to move all Search/Filter functions to the Sidebar.
+  * Some Template Changes: Most notable within the Changelist, where we´ve decided to move all Search/Filter functions to the Sidebar (because of actions and list_editables).
   * Icon Updates.
   * TinyMCE Skin Update.
   * Updated to work with Django 1.1.
@@ -23,12 +23,7 @@ Here´s a list with the most important changes:
   * Cancel-Button on delete confirmation.
 
 Still TODO:
-  * Styling the Documentation.
-  * Styling the Help-Section.
-  * Update Change-Password Site as well as Login/Logout.
-  * Some js-cleanup.
-  * Translation/i18n.
-  * Testing.
+  * Take a look at the Issues.
 <br>
 ----
 <br>
@@ -58,7 +53,7 @@ INSTALLED_APPS = (
 (r'^grappelli/', include('grappelli.urls')),
 }}}
   # *Change grappelli/settings.py*
-    Take a look at the available grappelli-settings and change them (if needed).
+    Take a look at the available grappelli-settings and change them (if necessary).
   # *Sync your Database*
     Run the Django 'syncdb' command to create the appropriate tables.
 {{{
