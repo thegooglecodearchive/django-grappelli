@@ -49,3 +49,9 @@ see http://code.djangoproject.com/ticket/11700
 The document structure of the admin_doc templates is a mess (about every second template has a different structure). Therefore, we are not sure if it makes sense to style this section of the admin-interface.
 
 Moreover, all admin-views lead to an error.
+
+== !ModelAdmin Media Definitions==
+
+There´s no distinction between Media for Change-Forms and Media for the Changelist. Therefore, if you define to load TinyMCE within your Model, it´s already loaded in the Changelist. The same goes for Stylesheets.
+
+We think there should be distinctive Media-Classes for Change-Form and Changelist.
