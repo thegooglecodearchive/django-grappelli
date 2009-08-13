@@ -1,7 +1,7 @@
 =Updates=
 
 *2009-08-11:*<br>
-Grappelli 2 prerelease, see [http://code.google.com/p/django-grappelli/wiki/Grappelli_2 G2 Docs].
+Grappelli 2 prerelease, see [http://code.google.com/p/django-grappelli/wiki/Grappelli_2 G2 Docs] and take a look at the [screenshots Screenshots].
 
 *2009-03-26:*<br>
 Added M2M Related Lookup, see [http://code.google.com/p/django-grappelli/wiki/relatedlookups Related Lookups].
