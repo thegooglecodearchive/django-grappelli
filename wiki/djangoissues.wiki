@@ -7,27 +7,27 @@ If you think there´s something missing here (or if an Issue has been resolved),
 ==Reordering Edit-Inlines==
 
 Because in case of errors, formsets are not returned in the right order, reordering inlines is currently not possible.<br>
-(_Solution seems to be coming soon.)_
+_(Solution seems to be coming soon.)_
 
 ==Translating App Names==
 
 It´s not possible to translate the names of apps within the admin-interface which leads to a strange language mix (esp. on the index page).<br>
-(_There´s already a ticket and this should be solved soon.)_
+_(There´s already a ticket and this should be solved soon.)_
 
 ==The Admin Index Site==
 
-Currently, the admin index site reflects the structure of your applications/models. I don´t think editors (who use the admin site) are interested in the structure of the application. What they want is the most reasonable list of models, divided into different sections (not necessarily apps).<br>
-(_The Django Developers don´t agree with this and therefore this probably won´t be solved.)_
+Currently, the admin index site reflects the structure of your applications/models. We don´t think editors (who use the admin site) are interested in the structure of the application. What they want is the most reasonable list of models, divided into different sections (not necessarily apps).<br>
+_(The Django Developers don´t agree with this and therefore this probably won´t be solved.)_
 
 ==Admin Site Objects and Related Lookups==
 
-If you use different Admin Site Objects, you have to register _every_ related model within ever site object you want to use that model for. Instead of customizing _every_ adminsite index template, Grappelli assumes that you registered _all_ models with your main adminsite.<br>
-(_This is not considered an issue by the django developers.)_
+If you use different Admin Site Objects, you have to register _every_ related model within _every_ site object you want to use that model for. Grappelli assumes that you registered _all_ models with your main adminsite.<br>
+_(This is not considered an issue by the django developers.)_
 
 ==Searching Generic Relations==
 
 It´s not possible to use a "content_object" within the search_fields. As far as I know, there´s no workaround.<br>
-(_I´m not sure if this will be solved.)_
+_(I´m not sure if this will be solved.)_
 
 ==Messages in Admin==
 
