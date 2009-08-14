@@ -52,6 +52,6 @@ Moreover, all admin-views lead to an error.
 
 == !ModelAdmin Media Definitions==
 
-There´s no distinction between Media for Change-Forms and Media for the Changelist. Therefore, if you define to load TinyMCE within your Model, it´s already loaded in the Changelist. The same goes for Stylesheets.
+There´s no distinction between Media for Change-Forms and Media for the Changelist. If you define to load TinyMCE within your Model, it´s already loaded in the Changelist. The same goes for Stylesheets.
 
-We think there should be distinctive Media-Classes for Change-Form and Changelist.
+We think there should be distinctive Media-Classes for Change-Form and Changelist. Although it´s not _that_ important, because the javascripts & stylesheets are in your browser-cache anyway.
