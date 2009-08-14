@@ -21,9 +21,8 @@ Currently, the admin index site reflects the structure of your applications/mode
 
 ==Admin Site Objects and Related Lookups==
 
-If you use different Admin Site Objects, you have to register every (!) related model within ever site object you want to use that model for. The problem here is somehow similar to the one mentioned before: Editors are just not interested in the underlying structure and still, they are forced to deal with it.
-Instead of customizing _every_ adminsite index template, Grappelli assumes that you registered _all_ models with your main adminsite.<br>
-(_This is not considered a bug by the django developers. So, it probably won´t be solved.)_
+If you use different Admin Site Objects, you have to register _every_ related model within ever site object you want to use that model for. Instead of customizing _every_ adminsite index template, Grappelli assumes that you registered _all_ models with your main adminsite.<br>
+(_This is not considered an issue by the django developers.)_
 
 ==Searching Generic Relations==
 
