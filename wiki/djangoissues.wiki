@@ -16,7 +16,7 @@ _(There´s already a ticket and this should be solved soon.)_
 
 ==The Admin Index Site==
 
-Currently, the admin index site reflects the structure of your applications/models. We don´t think editors (who use the admin site) are interested in the structure of project/applications. What they want is the most reasonable list of models, divided into different sections (not necessarily apps).<br>
+Currently, the admin index site reflects the structure of your applications/models. We don´t think editors (who use the admin site) are interested in the structure of your project/applications. What they want is the most reasonable list of models, divided into different sections (not necessarily apps).<br>
 _(The Django Developers don´t agree with this and therefore this probably won´t be solved.)_
 
 ==Admin Site Objects and Related Lookups==
