@@ -9,7 +9,7 @@ click to enlarge
 
 ==Change List==
 
-Within the Changelist, we moved the Searchbar as well as the Results to a Sidebar on the right hand side of the Screen. This was done in order to group elements with a simliar functionality. Moreover, the screen becomes more tidy (esp. when you use actions and list_editables). 
+Within the Changelist, we moved the Searchbar as well as the Results to a Sidebar on the right hand side of the Screen. This was done in order to group elements with a similar functionality. Moreover, the screen becomes more tidy (esp. when you use actions and list_editables).
 
 [http://vonautomatisch.at/media/uploads/grappelli/changelist_big.jpg http://vonautomatisch.at/media/uploads/grappelli/changelist_thumb.jpg]<br>
 click to enlarge
@@ -24,7 +24,7 @@ click to enlarge
 
 ==Tabular Inlines==
 
-With Tabular Inlines you can add Inline-Elements with the Plus-Button and you also get a Delete-Button for every element.
+With Tabular Inlines you can add Inline-Elements with the Add-Button and you also get a Delete-Button for every element. Reordering Inlines hopefully coming soon.
 
 [http://vonautomatisch.at/media/uploads/grappelli/inlinetabular_big.jpg http://vonautomatisch.at/media/uploads/grappelli/inlinetabular_thumb.jpg]<br>
 click to enlarge
