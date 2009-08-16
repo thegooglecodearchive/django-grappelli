@@ -13,3 +13,14 @@ class NavigationItemInline(admin.StackedInline):
     classes = ('collapse-open',)
     ...
 }}}
+
+==allow_add==
+
+With using _allow_add_, you´ll get the "+"-Button for Inlines.
+{{{
+class NavigationItemInline(admin.StackedInline):
+    
+    classes = ('collapse-open',)
+    allow_add = True
+    ...
+}}}
