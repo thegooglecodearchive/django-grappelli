@@ -12,7 +12,7 @@ As a superuser, you can manage all Bookmarks.
 
 ==Sidebar Navigation==
 
-The *Sidebar Navigation* can/should contain all different sections/applications of your admin-site as well as links to external ressources. Please be aware that you have to *manually assign Editors* to each of the Navigation Items (because not every Editor needs the same Navigation).
+The *Sidebar Navigation* can/should contain all different sections/applications of your admin-site as well as links to external ressources. Please be aware that you have to *manually assign Editors/Groups* to each of the Navigation Items (because not every Editor needs the same Navigation).
 
 Load the fixtures to get a better idea of what´s this about.
 
