@@ -1,4 +1,4 @@
-# notes, comments and discussion about changes in my branch
+Notes, comments and discussion about changes in my branch.
 
 = Changes =
 
