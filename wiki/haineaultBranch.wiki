@@ -39,3 +39,13 @@ Replacement for Bookmark.js.
 || *options*  || *default* || *description* ||
 || url  || `/grappelli/bookmark/get/` || URL for the Ajax loading of bookmarks ||
 || effects || `false` || Use UI effects ||
+
+
+== ui.gChangelist ==
+
+Replacement for Changelist.js.
+
+
+== ui.gCollapsedFieldsets ==
+
+Replacement for CollapsedFieldsets
