@@ -24,4 +24,18 @@ the block "javascripts". This block will be used to override JavaScript options.
         $('#content-main fieldset').gCollapsedFieldsets(); 
     });
 {% endblock %}
+
 }}}
+
+
+= Widgets =
+
+== ui.gBookmarks ==
+
+Replacement for Bookmark.js.
+
+=== Options ===
+
+|| *options*  || *default* || *description* ||
+|| url  || /a || `/grappelli/bookmark/get/` || URL for the Ajax loading of bookmarks ||
+|| effects || `false` || Use UI effects ||
