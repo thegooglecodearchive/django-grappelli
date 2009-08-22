@@ -1,0 +1,27 @@
+#notes, comments and discussion about changes in my branch
+
+= Changes =
+
+ - jQuery UI 1.7.2 integration
+ - created a [http://alturl.com/m4pf jQuery UI theme] with grappelli's colors
+ - removed Bookmark.js, created a jQuery widget
+ - removed Changelist.js, created a jQuery widget
+ - created jquery.grappelli.js which contains grappelli widgets
+
+= Template blocks =
+
+== javascripts.init ==
+
+Javascript initialization takes place in a block called "javascript.init" which is inside
+the block "javascripts". This block will be used to override JavaScript options.
+
+{{{
+
+{% block javascripts.init  %}
+    $(function(){
+        $('#bookmarks').gBookmarks({url: '{% url grp_bookmark_get %}'});
+        $('.changelist-content').gChangelist();
+        $('#content-main fieldset').gCollapsedFieldsets(); 
+    });
+{% endblock %}
+}}}
