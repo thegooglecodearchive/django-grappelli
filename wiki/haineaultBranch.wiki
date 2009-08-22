@@ -37,5 +37,5 @@ Replacement for Bookmark.js.
 === Options ===
 
 || *options*  || *default* || *description* ||
-|| url  || /a || `/grappelli/bookmark/get/` || URL for the Ajax loading of bookmarks ||
+|| url  || `/grappelli/bookmark/get/` || URL for the Ajax loading of bookmarks ||
 || effects || `false` || Use UI effects ||
