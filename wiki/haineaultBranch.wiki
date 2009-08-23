@@ -54,6 +54,6 @@ Replacement for CollapsedFieldsets
 
 I'm currently trying to implement a more intuitive way to handle permission.. here's what it looks so far:
 
-http://imgur.com/Zhraq.png
+http://imgur.com/EIC5u.png
 
 To try it checkout just my branch (*note:* at the moment it's just visually functional, change are not saved).
