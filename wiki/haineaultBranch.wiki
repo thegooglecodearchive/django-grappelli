@@ -56,4 +56,4 @@ I'm currently trying to implement a more intuitive way to handle permission.. he
 
 http://imgur.com/Zhraq.png
 
-To try it checkout just my branch.
+To try it checkout just my branch (*note:* at the moment it's just visually functional, change are not saved).
