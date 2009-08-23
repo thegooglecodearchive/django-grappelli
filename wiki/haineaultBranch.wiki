@@ -49,3 +49,11 @@ Replacement for Changelist.js.
 == ui.gCollapsedFieldsets ==
 
 Replacement for CollapsedFieldsets
+
+== ui.gSelectFilter (proposal) ==
+
+I'm currently trying to implement a more intuitive way to handle permission.. here's what it looks so far:
+
+http://imgur.com/Zhraq.png
+
+To try it checkout just my branch.
