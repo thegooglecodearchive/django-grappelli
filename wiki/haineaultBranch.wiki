@@ -4,9 +4,23 @@ Notes, comments and discussion about changes in my branch.
 
  * jQuery UI 1.7.2 integration
  * created a [http://alturl.com/m4pf jQuery UI theme] with grappelli's colors
- * removed Bookmark.js, created a jQuery widget
- * removed Changelist.js, created a jQuery widget
+ * removed Bookmark.js, created a jQuery widget (gBookmarks in jquery.grappelli.js)
+ * removed Changelist.js, created a jQuery widget (gChangelist in jquery.grappelli.js)
+ * removed Inline.js, created a jQuery widget (gInlineStacked and gInlineTabular in jquery.grappelli.js)
  * created jquery.grappelli.js which contains grappelli widgets
+ * refactored SelectBox.js (minor refactors/optimizations
+ * refactored SelectFilter2.js (minor refactors/optimizations)
+ * removed actions.js, created a jQuery widget (gActions in jquery.grappelli.js)
+ * removed calendar.js, replaced with jQuery UI Datepicker
+ * removed dateparse.js, jQuery provide date parsing facilities
+ * removed getElementsBySelector.js, obsoleted by jQuery
+ * removed timeparse.js, didn't find anywhere where it was used..
+ * refactored urlify.js, created jquery.urlify.js to replace it
+ * "History" button now opens a dialog (will make it optional and disabled by default if needed)
+ * removed CollapsedFieldsets.js, created a jQuery widget (gInlineGroup in jquery.grappelli.js)
+ * removed CollapsedInlineFieldsets.js, created a jQuery widget (gInlineStacked in jquery.grappelli.js)
+ * removed DateTimeShortcuts.js, created a jQuery widget (gTimeField and gDatetimeField in jquery.grappelli.js)
+
 
 = Template blocks =
 
@@ -50,22 +64,22 @@ Replacement for Changelist.js.
 
 Mainly take care of UI behavior of inline groups.
 
- - Handles "add" button
- - Handles inline "delete" buttons
- - Handles open/collapse of groups
+ * Handles "add" button
+ * Handles inline "delete" buttons
+ * Handles open/collapse of groups
 
 == ui.gInlineStacked ==
 
 This widget takes care of inline stacked elements.
 
- - Handles open/collapse of inline fieldsets
+ * Handles open/collapse of inline fieldsets
 
 == ui.gInlineTabular ==
 
 This widget takes care of inline tabular elements.
 
- - Handles ordering (almost working)
- - Handles inline "delete" buttons
+ * Handles ordering (almost working)
+ * Handles inline "delete" buttons
 
 == ui.gTimeField ==
 
