@@ -48,15 +48,24 @@ Replacement for Changelist.js.
 
 == ui.gInlineGroup ==
 
-Mainly take care of UI behavior of inline groups (Open, collapse etc..)
+Mainly take care of UI behavior of inline groups.
+
+ - Handles "add" button
+ - Handles inline "delete" buttons
+ - Handles open/collapse of groups
 
 == ui.gInlineStacked ==
 
 This widget takes care of inline stacked elements.
 
+ - Handles open/collapse of inline fieldsets
+
 == ui.gInlineTabular ==
 
-This widget takes care of inline tabular elements (with ordering almost working).
+This widget takes care of inline tabular elements.
+
+ - Handles ordering (almost working)
+ - Handles inline "delete" buttons
 
 == ui.gTimeField ==
 
