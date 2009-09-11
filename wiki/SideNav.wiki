@@ -1,4 +1,4 @@
-  * [http://code.google.com/p/django-grappelli/ ⟰ Home]
+  * [http://code.google.com/p/django-grappelli/ Home]
   * Information
     * [screenshots Screenshots]
     * [Features Features]
