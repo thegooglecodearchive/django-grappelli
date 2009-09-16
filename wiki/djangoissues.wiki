@@ -7,12 +7,12 @@ If you think there´s something missing here (or if an Issue has been resolved),
 ==Reordering Edit-Inlines==
 
 Because in case of errors, formsets are not returned in the right order, reordering inlines is currently not possible.<br>
-_(Solution seems to be coming soon.)_
+_(Solution seems to be coming ... somewhere.)_
 
 ==Translating App Names==
 
 It´s not possible to translate the names of apps within the admin-interface which leads to a strange language mix (esp. on the index page).<br>
-_(There´s already a ticket and this should be solved soon.)_
+_(There´s already a ticket but IMHO it does not solve the problem.)_
 
 ==The Admin Index Site==
 
@@ -54,3 +54,7 @@ Moreover, all admin-views lead to an error.
 There´s no distinction between Media for Change-Forms and Media for the Changelist. If you define to load TinyMCE within your Model, it´s already loaded in the Changelist. The same goes for Stylesheets.
 
 We think there should be distinctive Media-Classes for Change-Form and Changelist. Although it´s not _that_ important, because the javascripts & stylesheets are in your browser-cache anyway.
+
+== Harcoded Stuff==
+
+With "Hardcoded Stuff", I´m referring to HTML-Code within Views (instead of using Templates). There´s a lot of this within the Admin-Interface and therefore it´s just not possible to style some elements.
