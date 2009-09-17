@@ -46,6 +46,8 @@ urlpatterns = patterns('',
     (r'^user_admin/', include(user_site.urls)),
 }}}
 
+Please Note that you can use GrappelliSite without defining Groups. The apps registered with this site will be listed in the usual way. When you define Groups and you also have apps which are not part of any group, these apps will be shown at the bottom of the page.
+
 The admin index-page then looks something like this (note that the screenshot below is a more complex example ...):
 
 [http://vonautomatisch.at/media/uploads/grappelli/group.jpg]
