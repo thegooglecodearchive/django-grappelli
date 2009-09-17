@@ -37,4 +37,15 @@ user_site.apps = [
 ]
 }}}
 
+Of course, you still have to setup the urls for this admin-site:
+{{{
+from admin import user_site
+
+urlpatterns = patterns('',
+    ...
+    (r'^user_admin/', include(user_site.urls)),
+}}}
+
+The admin index-page then looks something like this (note that the screenshot below is a more complex example ...):
+
 [http://vonautomatisch.at/media/uploads/grappelli/group.jpg]
