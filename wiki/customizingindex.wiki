@@ -2,4 +2,39 @@
 
 With Grappelli, you have the possiblity to change the admin index page. Instead of listing apps acccording to INSTALLED_APPS, you´re able to group apps and list them in the most meaningful way.
 
+Let´s say you´re using Djangos built-in Authentication and you´re extending the User-Model. You´re using django-registration as well. Now, we´re going to group all these apps:
+{{{
+from grappelli.sites import GrappelliSite
+
+from django.contrib.auth.models import User, Group
+from django.contrib.auth.admin import GroupAdmin, UserAdmin
+
+from www.user.models import UserProfile, UserExtendedProfile
+from www.user.admin import UserExtendedProfileOptions, UserProfileOptions
+
+from www.registration.models import RegistrationProfile
+from www.registration.admin import RegistrationProfileOptions
+
+user_site = GrappelliSite()
+user_site.register(UserExtendedProfile, UserExtendedProfileOptions)
+user_site.register(UserProfile, UserProfileOptions)
+user_site.register(Group, GroupAdmin)
+user_site.register(User, UserAdmin)
+
+user_site.apps = [
+    {
+        'name': 'User Management',
+        'classes': '',
+        'show_apps': True,
+        'apps': ['auth', 'user']
+    },
+    {
+        'name': 'Registration',
+        'classes': 'collapse-closed',
+        'show_apps': False,
+        'apps': ['registration']
+    }
+]
+}}}
+
 [http://vonautomatisch.at/media/uploads/grappelli/group.jpg]
