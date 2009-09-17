@@ -1,0 +1,5 @@
+=Customizing Index Page=
+
+With Grappelli, you have the possiblity to change the admin index page. Instead of listing apps acccording to INSTALLED_APPS, you´re able to group apps and list them in the most meaningful way.
+
+[http://vonautomatisch.at/media/uploads/grappelli/index.jpg]
