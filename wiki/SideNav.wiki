@@ -13,6 +13,7 @@
     * [editinline Inline Reordering]
     * [modeladminoptions Model Admin]
     * [navigation Navigation Area]
+    * [customizingindex Admin Index Page]
     * [positionfield Positionfield]
     * [relatedlookups Related Lookups]
     * [settings Settings]
@@ -20,5 +21,3 @@
     * [extendingtemplates Templates]
     * [tinymce TinyMCE]
     * [generic Visual Generic Relationships]
-
-
