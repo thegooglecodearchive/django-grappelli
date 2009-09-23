@@ -19,7 +19,7 @@ Notes, comments and discussion about changes in my branch.
  * "History" button now opens a dialog (will make it optional and disabled by default if needed)
  * removed CollapsedFieldsets.js, created a jQuery widget (gInlineGroup in jquery.grappelli.js)
  * removed CollapsedInlineFieldsets.js, created a jQuery widget (gInlineStacked in jquery.grappelli.js)
- * removed DateTimeShortcuts.js, created a jQuery widget (gTimeField and gDatetimeField in jquery.grappelli.js)
+ * removed DateTimeShortcuts.js, created a jQuery widget (gTimeField and gDateField/gTimeField in jquery.grappelli.js)
 
 
 = Template blocks =
@@ -81,6 +81,23 @@ This widget takes care of inline tabular elements.
  * Handles ordering (almost working)
  * Handles inline "delete" buttons
 
+== Datetime ==
+
+== ui.gDateField ==
+
+=== Default datepicker options ===
+
+|| *options*  || *default* || *description* ||
+|| dateFormat  || `'yy-mm-dd'` || Date formet ||
+|| buttonImageOnly || `true` || Button without text ||
+|| showOn || `'button'` || Show only when button is clicked (ie: not focused field) ||
+|| showButtonPanel || `true` || Show "Cancel" and "Today" buttons ||
+|| closeText || `gettext('Cancel')` || Show "Cancel" and "Today" buttons ||
+|| buttonImage || ADMIN_MEDIA_PREFIX +'img/icons/icon-calendar.png' || Image path for the button ||
+
+For a complete list of the Datepicker options please refer to the official jQuery UI documentation: http://docs.jquery.com/UI/Datepicker
+
+
 == ui.gTimeField ==
 
 This is a jQuery reimplementation of the "clock picker" found in Grappelli2.
@@ -111,23 +128,6 @@ Example list of button (default one actually):
    }}
 ]
 }}}
-
-== ui.gDatetimeField ==
-
-Hooks datetime fields with the jQuery UI Datepicker and the ui.gTimeField.
-
-=== Default datepickr options ===
-
-|| *options*  || *default* || *description* ||
-|| dateFormat  || `'yy-mm-dd'` || Date formet ||
-|| buttonImageOnly || `true` || Button without text ||
-|| showOn || `'button'` || Show only when button is clicked (ie: not focused field) ||
-|| showButtonPanel || `true` || Show "Cancel" and "Today" buttons ||
-|| closeText || `gettext('Cancel')` || Show "Cancel" and "Today" buttons ||
-|| buttonImage || ADMIN_MEDIA_PREFIX +'img/icons/icon-calendar.png' || Image path for the button ||
-
-For a complete list of the Datepicker options please refer to the official jQuery UI documentation: http://docs.jquery.com/UI/Datepicker
-
 
 == ui.gActions ==
 
