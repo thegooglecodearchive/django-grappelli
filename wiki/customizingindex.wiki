@@ -46,6 +46,29 @@ urlpatterns = patterns('',
     (r'^user_admin/', include(user_site.urls)),
 }}}
 
+When using admin.autodiscover() you can define a !GrappelliSite like this:
+{{{
+from django.contrib import admin
+from grappelli.sites import GrappelliSite
+admin.site = GrappelliSite()
+admin.autodiscover()
+
+admin.site.apps = [
+    {
+        'name': 'User Management',
+        'classes': '',
+        'show_apps': True,
+        'apps': ['auth', 'user']
+    },
+    {
+        'name': 'Registration',
+        'classes': 'collapse-closed',
+        'show_apps': False,
+        'apps': ['registration']
+    }
+]
+}}}
+
 Please Note that you can use !GrappelliSite without defining Groups. The apps registered with this site will be listed in the usual way. When you define Groups and you also have apps which are not part of any group, these apps will be shown at the bottom of the page.
 
 The admin index-page then looks something like this (note that the screenshot below is a more complex example ...):
