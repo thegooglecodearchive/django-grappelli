@@ -138,7 +138,9 @@ This widget takes care of inline tabular elements.
 
 == ui.gDateField.js ==
 
-Provide date field calendar.
+Provide date field calendar using the jQuery UI datepicker.
+
+http://imgur.com/wX4cq.png
 
 === Default datepicker options ===
 
@@ -156,6 +158,10 @@ For a complete list of the Datepicker options please refer to the official jQuer
 == ui.gTimeField.js ==
 
 This is a jQuery reimplementation of the "clock picker" found in Grappelli2.
+
+http://imgur.com/YhBUy.png
+
+As you can see not much changed in appearance.
 
 === Options ===
 
@@ -199,6 +205,8 @@ http://imgur.com/EIC5u.png
 == ui.gSelectFilter.js (actual) ==
 
 Same select filter, jQuery style.
+
+http://imgur.com/d6eyj.png
 
 == jquery.urlify.js ==
 
