@@ -1,34 +1,5 @@
 Notes, comments and discussion about changes in my branch.
 
-= Todo =
-
- * find a proper autocomplete widget
- * remove core.js
- * remove admin/ordering.js
- * remove admin/RelatedObjectLookups.js
-
-= Changes =
-
- * jQuery UI 1.7.2 integration
- * created a [http://alturl.com/m4pf jQuery UI theme] with grappelli's colors
- * removed Bookmark.js, created a jQuery widget (gBookmarks in jquery.grappelli.js)
- * removed Changelist.js, created a jQuery widget (gChangelist in jquery.grappelli.js)
- * removed Inline.js, created a jQuery widget (gInlineStacked and gInlineTabular in jquery.grappelli.js)
- * created jquery.grappelli.js which contains grappelli widgets
- * refactored SelectBox.js (minor refactors/optimizations
- * refactored SelectFilter2.js (minor refactors/optimizations)
- * removed actions.js, created a jQuery widget (gActions in jquery.grappelli.js)
- * removed calendar.js, replaced with jQuery UI Datepicker
- * removed dateparse.js, jQuery provide date parsing facilities
- * removed getElementsBySelector.js, obsoleted by jQuery
- * removed timeparse.js, didn't find anywhere where it was used..
- * refactored urlify.js, created jquery.urlify.js to replace it
- * "History" button now opens a dialog (will make it optional and disabled by default if needed)
- * removed CollapsedFieldsets.js, created a jQuery widget (gInlineGroup in jquery.grappelli.js)
- * removed CollapsedInlineFieldsets.js, created a jQuery widget (gInlineStacked in jquery.grappelli.js)
- * removed DateTimeShortcuts.js, created a jQuery widget (gTimeField and gDateField/gTimeField in jquery.grappelli.js)
-
-
 = Template blocks =
 
 == {% block javascripts %}==
@@ -220,3 +191,40 @@ http://imgur.com/d6eyj.png
 == jquery.urlify.js ==
 
 Basically the same as the old URLify.js but scoped into an anonymous function and made accessible via `$.urlify` to avoid polluting the global namespace.
+
+
+= Themeroller =
+
+The calendar and popup (for the object history) are themed with jQuery UI Themeroller.
+
+[http://jqueryui.com/themeroller/#ffDefault=Arial%2Csans-serif&fwDefault=normal&fsDefault=12px&cornerRadius=4px&bgColorHeader=333333&bgTextureHeader=05_inset_soft.png&bgImgOpacityHeader=30&borderColorHeader=aaaaaa&fcHeader=eeeeee&iconColorHeader=eeeeee&bgColorContent=eeeeee&bgTextureContent=01_flat.png&bgImgOpacityContent=75&borderColorContent=aaaaaa&fcContent=222222&iconColorContent=222222&bgColorDefault=e6e6e6&bgTextureDefault=02_glass.png&bgImgOpacityDefault=75&borderColorDefault=d3d3d3&fcDefault=555555&iconColorDefault=888888&bgColorHover=d7dee0&bgTextureHover=02_glass.png&bgImgOpacityHover=75&borderColorHover=309BBF&fcHover=309BBF&iconColorHover=309BBF&bgColorActive=f0f0f0&bgTextureActive=04_highlight_hard.png&bgImgOpacityActive=80&borderColorActive=aaaaaa&fcActive=212121&iconColorActive=454545&bgColorHighlight=ffffee&bgTextureHighlight=02_glass.png&bgImgOpacityHighlight=55&borderColorHighlight=fcefa1&fcHighlight=363636&iconColorHighlight=309BBF&bgColorError=fef1ec&bgTextureError=05_inset_soft.png&bgImgOpacityError=95&borderColorError=BF3030&fcError=BF3030&iconColorError=BF3030&bgColorOverlay=aaaaaa&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=01_flat.png&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
+ This is the currently used theme].
+
+
+= Todo =
+
+ * find a proper autocomplete widget
+ * remove core.js
+ * remove admin/ordering.js
+ * remove admin/RelatedObjectLookups.js
+
+= Changes =
+
+ * jQuery UI 1.7.2 integration
+ * created a [http://alturl.com/m4pf jQuery UI theme] with grappelli's colors
+ * removed Bookmark.js, created a jQuery widget (gBookmarks in jquery.grappelli.js)
+ * removed Changelist.js, created a jQuery widget (gChangelist in jquery.grappelli.js)
+ * removed Inline.js, created a jQuery widget (gInlineStacked and gInlineTabular in jquery.grappelli.js)
+ * created jquery.grappelli.js which contains grappelli widgets
+ * refactored SelectBox.js (minor refactors/optimizations
+ * refactored SelectFilter2.js (minor refactors/optimizations)
+ * removed actions.js, created a jQuery widget (gActions in jquery.grappelli.js)
+ * removed calendar.js, replaced with jQuery UI Datepicker
+ * removed dateparse.js, jQuery provide date parsing facilities
+ * removed getElementsBySelector.js, obsoleted by jQuery
+ * removed timeparse.js, didn't find anywhere where it was used..
+ * refactored urlify.js, created jquery.urlify.js to replace it
+ * "History" button now opens a dialog (will make it optional and disabled by default if needed)
+ * removed CollapsedFieldsets.js, created a jQuery widget (gInlineGroup in jquery.grappelli.js)
+ * removed CollapsedInlineFieldsets.js, created a jQuery widget (gInlineStacked in jquery.grappelli.js)
+ * removed DateTimeShortcuts.js, created a jQuery widget (gTimeField and gDateField/gTimeField in jquery.grappelli.js)
