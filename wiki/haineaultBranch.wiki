@@ -101,6 +101,8 @@ http://imgur.com/0UM7q.png
 
 Replacement for Bookmark.js.
 
+http://imgur.com/vYUL4.png
+
 === Options ===
 
 || *options*  || *default* || *description* ||
