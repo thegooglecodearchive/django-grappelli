@@ -1,5 +1,12 @@
 Notes, comments and discussion about changes in my branch.
 
+= Todo =
+
+ * find a proper autocomplete widget
+ * remove core.js
+ * remove admin/ordering.js
+ * remove admin/RelatedObjectLookups.js
+
 = Changes =
 
  * jQuery UI 1.7.2 integration
