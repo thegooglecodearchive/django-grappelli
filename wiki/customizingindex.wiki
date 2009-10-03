@@ -74,3 +74,29 @@ Please Note that you can use !GrappelliSite without defining Groups. The apps re
 The admin index-page then looks something like this (note that the screenshot below is a more complex example ...):
 
 [http://vonautomatisch.at/media/uploads/grappelli/group.jpg]
+
+==Changing the order of Models within your Apps==
+
+With the Django Admin-Interface, the Models within Apps are ordered by Name - which is not necessarily the most logical order. To reorder the Models, you can use an attribute order within !ModelAdmin.
+
+{{{
+class NavigationOptions(admin.ModelAdmin):
+    
+    # List Options
+    list_display = ('order', 'title',)
+    ...
+    
+    # Grappelli Options
+    order = 0
+
+class BookmarkOptions(admin.ModelAdmin):
+    
+    # List Options
+    list_display = ('user',)
+    ...
+    
+    # Grappelli Options
+    order = 1
+
+}}}
+Now, the Model "Navigation" will be listed as first with "Bookmarks" below.
