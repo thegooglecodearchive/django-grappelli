@@ -6,7 +6,7 @@ grappelli is included as external, so to switch from grappelli branches or trunk
 
 {{{
 
-https://django-grappelli.googlecode.com/svn/branches/sandbox grappelli-sandbox
+svn co https://django-grappelli.googlecode.com/svn/branches/sandbox grappelli-sandbox
 
 }}}
 
