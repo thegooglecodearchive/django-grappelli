@@ -6,6 +6,12 @@ grappelli is included as external, so to switch from grappelli branches or trunk
 
 I also included a set of basic apps useful to really test grappelli:
 
+= Default username/pass =
+
+|| *user* || admin ||
+|| *pass* || admin ||
+
+
 = Contrib =
 
   * django-grappelli (haineault's branch by default)
