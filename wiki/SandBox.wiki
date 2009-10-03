@@ -31,6 +31,7 @@ I also included a set of basic apps useful to really test grappelli:
 
 {{{
 
+cd contrib/
 svn propedit svn:externals contrib/
 
 }}}
@@ -53,8 +54,8 @@ In this example I'm switching  the current working copy source for the trunk:
 
 {{{
 
-$: cd contrib/grappelli/
-$: svn switch http://django-grappelli.googlecode.com/svn/trunk/
+cd contrib/grappelli/
+svn switch http://django-grappelli.googlecode.com/svn/trunk/
 
 }}}
 
