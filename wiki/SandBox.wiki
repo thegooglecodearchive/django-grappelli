@@ -31,7 +31,7 @@ I also included a set of basic apps useful to really test grappelli:
 
 {{{
 
-$: svn propedit svn:externals contrib/
+svn propedit svn:externals contrib/
 
 }}}
 
