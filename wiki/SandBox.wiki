@@ -4,13 +4,19 @@ The sandbox is a generic project with a sqlite3 database. It's useful to test a 
 
 grappelli is included as external, so to switch from grappelli branches or trunk only a svn switch is necessary (or editing the externals).
 
-I also included a set of basic apps useful to really test grappelli:
+{{{
+
+https://django-grappelli.googlecode.com/svn/branches/sandbox grappelli-sandbox
+
+}}}
+
 
 = Default username/pass =
 
 || *user* || admin ||
 || *pass* || admin ||
 
+I also included a set of basic apps useful to really test grappelli:
 
 = Contrib =
 
