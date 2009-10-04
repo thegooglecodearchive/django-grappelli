@@ -74,6 +74,29 @@ It also provide a popup functionality for the Change history of objects, like th
 
 http://imgur.com/0UM7q.png
 
+== ui.gAutocomplete.js (dev) ==
+
+Autocomplete widget for ForeignFields.
+
+This is the first draft:
+
+*Default appearance*
+
+http://imgur.com/q7cO6.png
+
+*Focused*
+
+http://imgur.com/zAYWH.png
+
+*Completing*
+
+http://imgur.com/hhYkO.png
+
+`*` Note: the orange is a system color of my os (under Windows this would most likely be blue)
+
+*Browse button*
+
+http://imgur.com/WhHg5.png
 
 == ui.gBookmarks.js ==
 
@@ -84,7 +107,7 @@ http://imgur.com/vYUL4.png
 === Options ===
 
 || *options*  || *default* || *description* ||
-|| url  || `/grappelli/bookmark/get/` || URL for the Ajax loading of bookmarks ||
+|| url || `/grappelli/bookmark/get/` || URL for the Ajax loading of bookmarks ||
 || effects || `false` || Use UI effects ||
 
 
