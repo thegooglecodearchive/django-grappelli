@@ -10,7 +10,6 @@
     * [Installation Installation (1.0)]
     * [Grappelli_2 Installation (2.0)]
     * [inlinemodeladminoptions Inline Model Admin]
-    * [editinline Inline Reordering]
     * [modeladminoptions Model Admin]
     * [navigation Navigation Area]
     * [customizingindex Admin Index Page]
