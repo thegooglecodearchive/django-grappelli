@@ -76,7 +76,30 @@ http://imgur.com/0UM7q.png
 
 == ui.gAutocomplete.js (dev) ==
 
-Autocomplete widget for ForeignFields.
+=== FK Autocomplete widget ==
+
+==== Admin configuration ====
+
+{{{
+from grappelli.admin import GrappelliModelAdmin
+class MyModelAdmin(GrappelliModelAdmin):
+    list_display = ('__unicode__',)
+    autocomplete = {
+        'fk_field_name': {
+            'search_fields': ('username', 'first_name', 'last_name'),         # mandatory (should it?)
+            'input_format':  '{label:s}',           # optional
+            'list_format':   '{id:d} - {label:s}',  # optional
+        }
+    }
+
+}}}
+
+==== Options ====
+
+||*Option*||*Description*||
+||`search_fields`|| On which fields to perform the search ||
+||`input_format`|| Object format in the input field (display format, not save format) ||
+||`list_format`|| Objects format of the result list ||
 
 This is the first draft:
 
