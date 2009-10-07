@@ -212,6 +212,26 @@ http://imgur.com/d6eyj.png
 
 Basically the same as the old URLify.js but scoped into an anonymous function and made accessible via `$.urlify` to avoid polluting the global namespace.
 
+= Other changes =
+
+== collapse-open and collapse-open-items ==
+
+It's now possible to control the collapse state of inline groups
+and inline items independently.
+
+*Example:*
+
+{{{
+
+class MyModel(admin.ModelAdmin):
+    classes = ('collapse-open collapse-closed-items',)
+    # ...
+
+class MyModel2(admin.ModelAdmin):
+    classes = ('collapse-open collapse-open-items',)
+    # ...
+
+}}}
 
 = Themeroller =
 
@@ -248,3 +268,5 @@ The calendar and popup (for the object history) are themed with jQuery UI Themer
  * removed CollapsedFieldsets.js, created a jQuery widget (gInlineGroup in jquery.grappelli.js)
  * removed CollapsedInlineFieldsets.js, created a jQuery widget (gInlineStacked in jquery.grappelli.js)
  * removed DateTimeShortcuts.js, created a jQuery widget (gTimeField and gDateField/gTimeField in jquery.grappelli.js)
+ * created gAutocomplete and gFacelist (for FK and M2M autocompletes)
+ * added `collapse-open-items` class
