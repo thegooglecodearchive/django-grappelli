@@ -100,3 +100,7 @@ class BookmarkOptions(admin.ModelAdmin):
 
 }}}
 Now, the Model "Navigation" will be listed as first with "Bookmarks" below.
+
+==Renaming Apps==
+
+It´s currently not possible to rename apps with !GrappelliSite, because the app-name is used within the breadcrumbs (and changing the breadcrumbs is not possible with subclassing !AdminSite).
