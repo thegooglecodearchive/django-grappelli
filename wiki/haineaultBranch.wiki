@@ -86,7 +86,7 @@ class MyModelAdmin(GrappelliModelAdmin):
     list_display = ('__unicode__',)
     autocomplete = {
         'fk_field_name': {
-            'search_fields': ('username', 'first_name', 'last_name'),         # mandatory (should it?)
+            'search_fields': ('username', 'first_name', 'last_name'),
             'input_format':  '{label:s}',           # optional
             'list_format':   '{id:d} - {label:s}',  # optional
         }
