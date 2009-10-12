@@ -292,3 +292,17 @@ The calendar and popup (for the object history) are themed with jQuery UI Themer
  * removed DateTimeShortcuts.js, created a jQuery widget (gTimeField and gDateField/gTimeField in jquery.grappelli.js)
  * created gAutocomplete and gFacelist (for FK and M2M autocompletes)
  * added `collapse-open-items` class
+ * max length of related lookup text now include the suffix " ..."
+ * suffix " ..." of related lookup text is now configurable (maxTextSuffix)
+ * max length of related lookup text is now configurable (maxTextLength)
+ * unescape now works on all characters instead of a limited subset
+ * when adding a related object, it is now added in all other inlines selects as well
+
+
+= Todo = 
+
+ * autocomplete theme
+ * iron out themeroller theme
+ * change drag handles
+ * related lookups (m2m)
+ * JavaScript merge/minify
