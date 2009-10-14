@@ -121,6 +121,17 @@ http://imgur.com/hhYkO.png
 
 http://imgur.com/WhHg5.png
 
+== ui.gAutoSlugField.js ==
+
+This field can work in two way, the first is standalone where only a slugfield is presented to the user. The other way is with a related field like below. The slugfield
+gets updated as the related field is changed;
+
+http://imgur.com/KQnF4.png
+
+|| *options*  || *default* || *description* ||
+|| delay || `0.8` || Delay after keyup before slugify (this is necessary to allow the user to type) ||
+
+
 == ui.gBookmarks.js ==
 
 Replacement for Bookmark.js.
