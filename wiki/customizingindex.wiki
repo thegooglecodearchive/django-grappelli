@@ -1,6 +1,6 @@
 =Customizing Index Page=
 
-With Grappelli, you have the possiblity to change the admin index page. Instead of listing apps acccording to INSTALLED_APPS, you´re able to group apps and list them in the most meaningful way.
+With Grappelli, you have the possiblity to change the admin index page. Instead of listing apps acccording to INSTALLED_APPS, you´re able to group apps and list them in the most meaningful way. Moreover, you can display subsections of your admin index page with either using groups or collections.
 
 Let´s say you´re using Djangos built-in Authentication and you´re extending the User-Model. You´re using django-registration as well. Now, we´re going to group all these apps:
 {{{
@@ -21,20 +21,27 @@ user_site.register(UserProfile, UserProfileOptions)
 user_site.register(Group, GroupAdmin)
 user_site.register(User, UserAdmin)
 
-user_site.apps = [
-    {
+user_site.groups = {
+    0: {
+        'title': 'User Management Administration', # optional
         'name': 'User Management',
-        'classes': '',
-        'show_apps': True,
-        'apps': ['auth', 'user']
+        'apps': ['auth', 'user'],
+        'template': 'custom/index_group_usermanagement.html', # optional
+        'classes': ['collapse-open'], # optional
+        'show_apps': True, # optional
     },
-    {
+    1: {
         'name': 'Registration',
-        'classes': 'collapse-closed',
-        'show_apps': False,
         'apps': ['registration']
     }
-]
+}
+
+user_site.collections = {
+    0: {
+        'title': 'User Admin',
+        'groups': [0,1]
+    },
+}
 }}}
 
 Of course, you still have to setup the urls for this admin-site:
@@ -53,20 +60,28 @@ from grappelli.sites import GrappelliSite
 admin.site = GrappelliSite()
 admin.autodiscover()
 
-admin.site.apps = [
-    {
+admin.site.groups = {
+    0: {
+        'title': 'User Management Administration', # optional
         'name': 'User Management',
-        'classes': '',
-        'show_apps': True,
-        'apps': ['auth', 'user']
+        'apps': ['auth', 'user'],
+        'template': 'custom/index_group_usermanagement.html', # optional
+        'classes': ['collapse-open'], # optional
+        'show_apps': True, # optional
     },
-    {
+    1: {
         'name': 'Registration',
-        'classes': 'collapse-closed',
-        'show_apps': False,
         'apps': ['registration']
     }
-]
+}
+
+
+admin.site.collections = {
+    0: {
+        'title': 'User Admin',
+        'groups': [0,1]
+    },
+}
 }}}
 
 Please Note that you can use !GrappelliSite without defining Groups. The apps registered with this site will be listed in the usual way. When you define Groups and you also have apps which are not part of any group, these apps will be shown at the bottom of the page.
