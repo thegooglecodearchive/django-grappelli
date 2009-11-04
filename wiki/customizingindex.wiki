@@ -116,6 +116,12 @@ class BookmarkOptions(admin.ModelAdmin):
 }}}
 Now, the Model "Navigation" will be listed as first with "Bookmarks" below.
 
+==Links to Groups and Collections==
+
+If you want your Editors to view subsections of the admin index page, you can display links to Groups and/or Collections using Grappellis built-in Navigation-Sidebar. E.g., a link to the Collection defined with key "0" is something like "/admin/?c=0".
+
+When having lots of apps/models, it might be useful to define a couple of Collection in order to break down the admin index page into smaller sections. Referring to the above Screenshot, everything which is listed under "Inhalte" in the Navigation-Sidebar is basically a Collection.
+
 ==Renaming Apps==
 
 It´s currently not possible to rename apps with !GrappelliSite, because the app-name is used within the breadcrumbs (and changing the breadcrumbs is not possible with subclassing !AdminSite).
