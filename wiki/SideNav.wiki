@@ -13,13 +13,17 @@
     * [setup Setup]
     * [settings Available Settings]
   * Documentation
-    * [inlinemodeladminoptions Inline Model Admin]
     * [modeladminoptions Model Admin]
-    * [navigation Navigation Area]
-    * [customizingindex Admin Index Page]
-    * [positionfield Positionfield]
+    * [inlinemodeladminoptions Inline Model Admin]
     * [relatedlookups Related Lookups]
-    * [SandBox Sandbox]
+    * [generic Generic Relationships]
+    * [positionfield Positionfield]
+    * [tinymce Using TinyMCE]
+    * [navigation Customizing Navigation Area]
+    * [customizingindex Customizing the Admin Index Page]
     * [extendingtemplates Templates]
-    * [tinymce TinyMCE]
-    * [generic Visual Generic Relationships]
+  * Sandbox
+    * [SandBox Sandbox]
+    
+    
+    
