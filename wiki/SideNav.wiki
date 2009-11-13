@@ -1,14 +1,15 @@
   * [http://code.google.com/p/django-grappelli/ Home]
+  * Screenshots
+    * [screenshots Screenshots]
   * Information
-    * [djangoissues Django issues]
     * [FAQ FAQ]
     * [Features Features]
-    * [Reviews Reviews]
-    * [screenshots Screenshots]
+    * [releasenotes Release Notes]
     * [updates Updates]
+    * [djangoissues Django issues]
+    * [Reviews Reviews]
   * Documentation
-    * [Installation Installation (1.0)]
-    * [Grappelli_2 Installation (2.0)]
+    * [Installation Installation]
     * [inlinemodeladminoptions Inline Model Admin]
     * [modeladminoptions Model Admin]
     * [navigation Navigation Area]
