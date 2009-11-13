@@ -35,7 +35,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 {{{
 python manage.py syncdb
 }}}
-  _This will create the tables for Bookmarks, Help & Navigation._
+    _This will create the tables for Bookmarks, Help & Navigation._
   # *Optional: Load Fixtures*
     It´s recommended to load some initial data.
 {{{
