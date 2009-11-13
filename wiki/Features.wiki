@@ -8,6 +8,7 @@ Basically, Grappelli gives you a new look & feel for the Django Admin-Interface.
   * *!PositionField*
   * *Grappelli TinyMCE Skin*
   * *Integration with the [http://code.google.com/p/django-filebrowser/ Django FileBrowser]*
+  * *Customizable Admin Index Page (including subsections with Groups/Collections)*
   * Additional Navigation Area on the Index-Site
   * User-related Bookmarks in the Header-Section
   * Help/Documentation for Editors.
