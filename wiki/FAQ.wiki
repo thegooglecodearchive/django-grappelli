@@ -12,7 +12,7 @@ With all the crappy Rich-Text-Editors out there, this one is ok (don´t ask how 
 
 Because if there are new features in the Admin-Interface, we are planning to integrate them as fast as possible using Grappelli. Therefore, Grappelli heavily relies on the Original Interface.
 
-_This said, we´ve refactored most HTML/CSS-Files!_
+_That said, we´ve refactored most HTML/CSS- and JS-Files!_
 ----
 *Who made Grappelli?*
 
