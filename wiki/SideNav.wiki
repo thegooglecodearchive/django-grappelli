@@ -8,8 +8,11 @@
     * [updates Updates]
     * [djangoissues Django issues]
     * [Reviews Reviews]
-  * Documentation
+  * Installation
     * [Installation Installation]
+    * [setup Setup]
+    * [settings Available Settings]
+  * Documentation
     * [inlinemodeladminoptions Inline Model Admin]
     * [modeladminoptions Model Admin]
     * [navigation Navigation Area]
@@ -17,8 +20,6 @@
     * [positionfield Positionfield]
     * [relatedlookups Related Lookups]
     * [SandBox Sandbox]
-    * [settings Settings]
-    * [setup Setup]
     * [extendingtemplates Templates]
     * [tinymce TinyMCE]
     * [generic Visual Generic Relationships]
