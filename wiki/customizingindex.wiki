@@ -143,3 +143,5 @@ or (if you´re using several different admin-sites)
 {{{
 from myproject.admin import admin, user_site
 }}}
+
+For smaller projects with just a couple of apps and one admin-site, you can also use urls.py to define your admin-stuff.
