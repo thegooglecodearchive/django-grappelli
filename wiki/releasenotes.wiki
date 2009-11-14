@@ -6,7 +6,7 @@
     * CSS cleanup (decoupled styles from Djangos original stylesheets).
     * Removed all Background-Images (excluding Icons).
     * Removed almost every !important within Stylesheets.
-    * Some Template Changes: Most notable within the Changelist, where we´ve decided to move all Search/Filter functions to the Sidebar (because of actions and list_editables).
+    * Some Template Changes: Most notable within the Changelist, where we´ve decided to move all Search/Filter functions to the Sidebar (because otherwise, with actions and list_editables activated, it gets a bit confusing).
     * Icon Updates.
     * TinyMCE Skin Update.
     * Updated to work with Django 1.1.
