@@ -13,5 +13,6 @@
     * Updated Bookmark functionality.
     * Cancel-Button on delete confirmation.
     * Admin Index Page is now customizable.
+    * Removed !FileBrowser-Templates (they are now part of the !FileBrowser).
 
     * And a lot of smaller changes ... 
