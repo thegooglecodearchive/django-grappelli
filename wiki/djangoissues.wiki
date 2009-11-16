@@ -50,6 +50,10 @@ The document structure of the admin_doc templates is a bit messy (about every se
 
 Moreover, all admin-views lead to an error.
 
+== Admin Documentation: Translation==
+
+Translation of the Admin Documentation is half-baked.
+
 == !ModelAdmin Media Definitions==
 
 There´s no distinction between Media for Change-Forms and Media for the Changelist. If you define to load TinyMCE within your Model, it´s already loaded in the Changelist. The same goes for Stylesheets.
