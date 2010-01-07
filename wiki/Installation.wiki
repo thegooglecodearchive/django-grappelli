@@ -8,11 +8,13 @@ Before Installing Grappelli, please take a look at the known [djangoissues Djang
 svn checkout http://django-grappelli.googlecode.com/svn/trunk/grappelli/ grappelli
 }}}
   # *Add Grappelli to your INSTALLED APPS*
-    Open your projects settings-file (settings.py) and add Grappelli to your INSTALLED APPS.
+    Open your projects settings-file (settings.py) and add Grappelli to your INSTALLED APPS *before django.contrib.admin*.
 {{{
 INSTALLED_APPS = (
     ...
     'grappelli',
+    'django.contrib.admin',
+    ...
 )
 }}}
   # *Add context-processors*
@@ -50,16 +52,8 @@ cp -R /path/to/grappelli/media /path/to/your/admin/media
 }}}
     _ Note: If possible, avoid using /django/contrib/admin/media/ as your media directory (since it will break future django-updates)._<br>
     _If your ADMIN_MEDIA_PREFIX is /media/admin/ (for example), you need a directory   "admin" within your media-directory. Inside of /admin/, you need all Grappelli media files._
-  # *Copy/Symlink Templates*
-    Copy the folder /template/ to your admin templates-directory. Alternatively, you might want to use a symlink. Note: Avoid using "/django/contrib/admin/templates/" since it will break future django-updates.
+
+Note: If you use Djangos integrated development server, start it with
 {{{
-cp -R /path/to/grappelli/templates /path/to/your/admin/templates
+python manage.py runserver mydomain.com:8001 --adminmedia=/path/to/your/admin/media/
 }}}
-    In order to overwrite the original admin-templates you need to make sure that your TEMPLATE_LOADERS are looking at the Filesystem first:
-{{{
-TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.load_template_source',
-    'django.template.loaders.app_directories.load_template_source',
-)
-}}}
-    _This step is necessary in order to overwrite Djangos Admin-Templates._
