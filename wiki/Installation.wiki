@@ -55,5 +55,5 @@ cp -R /path/to/grappelli/media /path/to/your/admin/media
 
 Note: If you use Djangos integrated development server, start it with
 {{{
-python manage.py runserver mydomain.com:8001 --adminmedia=/path/to/your/admin/media/
+python manage.py runserver mydomain.com:8000 --adminmedia=/path/to/your/admin/media/
 }}}
