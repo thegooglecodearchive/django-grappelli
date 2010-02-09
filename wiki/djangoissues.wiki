@@ -63,3 +63,8 @@ We think there should be distinctive Media-Classes for Change-Form and Changelis
 == Harcoded Stuff==
 
 With "Hardcoded Stuff", I´m referring to HTML-Code within Views (instead of using Templates). There´s a lot of this within the Admin-Interface and therefore it´s just not possible to style some elements.
+
+== HTML/CSS Framework ==
+
+For the Admin-Interface to be customizable, flexible and extensible, we need a coherent scheme with either HTML and CSS. If one wants to customize the change-form for example, it shouldn´t be like "ok, let´s add a new block ... let me think ... there´s no class for what I want ... so let´s just add a new class". instead it should be like "ok, let´s add a new block ... I´m checking the HTML/CSS docs ... finding the right class ... done."
+otherwise, almost every 3rd-party app using the admin-interface ends up with custom styles and code-blocks.
