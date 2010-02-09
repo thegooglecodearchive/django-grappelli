@@ -62,7 +62,8 @@ We think there should be distinctive Media-Classes for Change-Form and Changelis
 
 == Harcoded Stuff==
 
-With "Hardcoded Stuff", I´m referring to HTML-Code within Views (instead of using Templates). There´s a lot of this within the Admin-Interface and therefore it´s just not possible to style some elements.
+With "Hardcoded Stuff", I´m referring to HTML-Code within Views (instead of using Templates). There´s a lot of this within the Admin-Interface and therefore it´s just not possible to style some elements.<br>
+(Solved with Grappelli ... to be released soon.)
 
 == HTML/CSS Framework ==
 
