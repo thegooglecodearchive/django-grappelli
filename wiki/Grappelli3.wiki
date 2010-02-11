@@ -1,0 +1,32 @@
+#README/INSTALL/FAQ... for grappelli standalone aka. grappelli 3
+
+= Introduction =
+
+grappelli 3 is a new approach. it's a _"standalone"_ app. means there is no django.contrib.admin necessary.
+
+initial goals:
+  * get rid of register(): no more AdminModels and no need to register models.
+  * editable admin start page and admin lists and forms
+  * ...
+
+= INSTALL =
+
+*settings.py*
+{{{
+
+#from django.contrib import admin
+from grappelli import admin
+
+admin.autodiscover()
+
+urlpatterns = patterns('',
+    (r'^admin/', include(admin.site.urls)),
+    (r'^grappelli/', include('grappelli.custom.urls')),
+)
+
+
+}}}
+
+= Details =
+
+...
