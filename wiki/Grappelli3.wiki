@@ -7,7 +7,8 @@ grappelli 3 is a new approach. it's a _"standalone"_ app. means there is no djan
 initial goals:
   * get rid of register(): no more AdminModels and no need to register models.
   * editable admin start page and admin lists and forms
-  * ...
+  * complete JavaScript refactoring using exclusively unobtrusive jQuery & jQuery UI
+  * complete DOM rewrite (using a CSS grid and semantically sane HTML)
 
 = INSTALL =
 
@@ -27,6 +28,23 @@ urlpatterns = patterns('',
 
 }}}
 
-= Details =
+= Included features =
 
-...
+|| *Feature* || *Description* ||
+|| Autocomplete || Autocomplete field ||
+|| AutoSlugField || Automatically generate slug field from a target input ||
+|| Collapsibles || Enhanced Collapsibles ||
+|| Custom Index || Customizable Admin Index Page || 
+|| Filebrowser || Integration with Django [http://code.google.com/p/django-filebrowser/ Filebrowser] ||
+|| Inline Model Admin || ||
+|| Help/Documentation for Editors. || ||
+|| PositionField || ||
+|| Related Lookups || ||
+|| RTE (TinyMCE) || Rich Text Editor ||
+|| M2M Autocomplete || ManyToMany Autocomplete field (like facelist) ||
+|| Side Navigation || Additional Navigation Area on the Index-Site ||
+|| Visual Generic Relationships || ||
+
+
+
+
