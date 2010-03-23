@@ -1,4 +1,4 @@
-#A django application dedicated to test grappelli
+# A django application dedicated to test grappelli
 
 = Introduction =
 
