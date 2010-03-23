@@ -62,8 +62,8 @@ urlpatterns = patterns('',
 
 By then you should have a new link called "tests" available next to the change password link in the top bar. This link leads to a page like this;
 
-!http://i.imgur.com/CywCD.png
+http://i.imgur.com/CywCD.png
 
 For now the only functional part is the grappelli unit tests:
 
-!http://i.imgur.com/3eqVO.png 
+http://i.imgur.com/3eqVO.png 
