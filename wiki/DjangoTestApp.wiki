@@ -1,5 +1,3 @@
-#A django application dedicated to test grappelli
-
 = Introduction =
 
 This application will load unit javascript tests in grappelli.
