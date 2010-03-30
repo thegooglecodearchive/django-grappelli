@@ -1,5 +1,7 @@
 =Reordering Edit-Inlines=
 
+==Note: This is currently not working.==
+
 With using Grappelli, you get the option to (re)order edit-lines (Stacked & Tabular) using Drag & Drop. Moreover, the reordering is preserved in the case of errors.
 
 *This is achieved with pure javascript (JQuery) - since Django doesn´t support re-ordering inlines, this is currently the only possiblity.*
