@@ -1,5 +1,3 @@
-# reference for grappelli developers
-
 = JavaScript =
 
 UI components have been broken down in encapsulated jQuery UI widgets.
@@ -32,7 +30,9 @@ This will generate the following files;
 
 Edit the file templates/admin/base.html to toggle between minified/merged and source code.
 
-== Widget structure ==
+== Widget ==
+
+=== structure ===
 
 Here's a minimal bare bone widget boiler plate:
 
@@ -59,3 +59,21 @@ Now here's a breakdown of what's going on line by line.
  # obviously `_init` is called upon initialization.
  # grappelli widgets systematically use ui to refer at `this` for scope managing convenience.
  # will alert 0.5
+
+=== Changing config after initialization ===
+
+{{{
+$(selector).gWidgetName('option', 'speed', 1.0);
+}}}
+
+== Global config manager ==
+
+You can set and get global configurations with these methods;
+
+{{{
+
+$.grappelli.conf.set('Hello', 'World');
+
+$.grappelli.conf.get('Hello'); // outputs 'World'
+
+}}}
