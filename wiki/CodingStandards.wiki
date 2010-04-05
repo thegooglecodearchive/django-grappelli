@@ -32,7 +32,9 @@ Edit the file templates/admin/base.html to toggle between minified/merged and so
 
 == Widget ==
 
-=== structure ===
+[http://docs.jquery.com/UI_Developer_Guide#The_widget_factory Official documentation]
+
+=== Structure ===
 
 Here's a minimal bare bone widget boiler plate:
 
@@ -49,6 +51,11 @@ $.widget('ui.gWidgetName', {
 });
 }}}
 
+=== Variables ===
+
+|| `ui.element` || Element on which the widget was called ||
+|| `ui.options` || Widget options object ||
+
 Now here's a breakdown of what's going on line by line.
 
  # creating the widget, which will be callable via `$(selector).gWidgetName();`
@@ -59,6 +66,16 @@ Now here's a breakdown of what's going on line by line.
  # obviously `_init` is called upon initialization.
  # grappelli widgets systematically use ui to refer at `this` for scope managing convenience.
  # will alert 0.5
+
+=== Public vs Private methods ===
+
+Method prefixed with an underscore (_) will not be available publicly. Otherwise, the method will be accessible and callable like this;
+
+{{{
+$(selector).gWidgetName('methodName', options);
+}}}
+
+
 
 === Changing config after initialization ===
 
