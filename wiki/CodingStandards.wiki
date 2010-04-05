@@ -1,0 +1,63 @@
+#reference for grappelli developers
+
+= JavaScript =
+
+UI components have been broken down in encapsulated jQuery UI widgets.
+
+== Folder structure ==
+
+|| media/jquery/grappelli || Folder that contains all the grappelli code ||
+|| media/jquery/grappelli/src || Source code, this is where you modify widgets ||
+|| media/jquery/grappelli/dist || Contains the compressed/minified distribution files ||
+|| media/jquery/grappelli/src || Source code, this is where you modify widgets ||
+|| media/jquery/grappelli/src || Contains external libraries ||
+
+== Build instruction ==
+
+To compile and minify the source code use the following commands;
+
+{{{
+
+$: cd media/jquery/grappelli/
+$: python build.py -m
+
+}}}
+
+This will generate the following files;
+
+ * dist/jquery.grappelli.js
+ * dist/jquery.grappelli.min.js
+
+== Switching between droduction vs development code ==
+
+Edit the file templates/admin/base.html to toggle between minified/merged and source code.
+
+== Widget structure ==
+
+Here's a minimal bare bone widget boiler plate:
+
+{{{
+$.widget('ui.gWidgetName', {
+    options: {
+        autoSelector: '#changelist',
+	speed: 0.5
+    },
+    _init: function() {
+        var ui = this;
+	alert(ui.options.spee); 
+    }
+});
+}}}
+
+Now here's a breakdown of what's going on line by line.
+
+ # creating the widget, which will be callable via `$(selector).gWidgetName();`
+ # setting up default options. These options can be overrided at initialization time: `$(selector).gWidgetName({spee: 1.0});`
+ # `autoSelector` is a grappelli specific option used for widget autoloading
+ # `speed` is a simple default option example
+ # end options ..
+ # obviously `_init` is called upon initialization.
+ # grappelli widgets systematically use ui to refer at `this` for scope managing convenience.
+ # will alert 0.5
+
+
