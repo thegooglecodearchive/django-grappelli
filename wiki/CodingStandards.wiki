@@ -1,3 +1,5 @@
+<wiki:toc max_depth="2" />
+
 = JavaScript =
 
 UI components have been broken down in encapsulated jQuery UI widgets.
