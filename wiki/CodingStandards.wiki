@@ -94,3 +94,15 @@ $.grappelli.conf.set('Hello', 'World');
 $.grappelli.conf.get('Hello'); // outputs 'World'
 
 }}}
+
+= CSS =
+
+== jQuery UI CSS Framework ==
+
+|| `.ui-helper-hidden` || Applies display: none to elements. ||
+|| `.ui-helper-hidden-accessible` || Applies accessible hiding to elements (via abs positioning off the page) ||
+|| `.ui-helper-reset` || A basic style reset for UI elements. Resets things such as padding, margins, text-decoration, list-style, etc. ||
+|| `.ui-helper-clearfix` || Applies float wrapping properties to parent elements. ||
+|| `.ui-helper-zfix` || Applies iframe "fix" css to iframe elements when needed in overlays. ||
+
+[http://docs.jquery.com/UI/Theming/API Full API documentation]
