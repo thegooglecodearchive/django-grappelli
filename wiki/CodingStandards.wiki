@@ -1,10 +1,12 @@
+= Coding Standards =
+
 <wiki:toc max_depth="2" />
 
-= JavaScript =
+== Javascript ==
 
 UI components have been broken down in encapsulated jQuery UI widgets.
 
-== Folder structure ==
+=== Folder structure ===
 
 || media/jquery/grappelli || Folder that contains all the grappelli code ||
 || media/jquery/grappelli/src || Source code, this is where you modify widgets ||
@@ -12,7 +14,7 @@ UI components have been broken down in encapsulated jQuery UI widgets.
 || media/jquery/grappelli/src || Source code, this is where you modify widgets ||
 || media/jquery/grappelli/src || Contains external libraries ||
 
-== Build instruction ==
+=== Build instruction ===
 
 To compile and minify the source code use the following commands;
 
@@ -28,15 +30,15 @@ This will generate the following files;
  * dist/jquery.grappelli.js
  * dist/jquery.grappelli.min.js
 
-== Switching between droduction vs development code ==
+=== Switching between droduction vs development code ===
 
 Edit the file templates/admin/base.html to toggle between minified/merged and source code.
 
-== Widget ==
+=== Widget ===
 
 [http://docs.jquery.com/UI_Developer_Guide#The_widget_factory Official documentation]
 
-=== Structure ===
+==== Structure ====
 
 Here's a minimal bare bone widget boiler plate:
 
@@ -53,7 +55,7 @@ $.widget('ui.gWidgetName', {
 });
 }}}
 
-=== Variables ===
+==== Variables ====
 
 || `ui.element` || Element on which the widget was called ||
 || `ui.options` || Widget options object ||
@@ -69,7 +71,7 @@ Now here's a breakdown of what's going on line by line.
  # grappelli widgets systematically use ui to refer at `this` for scope managing convenience.
  # will alert 0.5
 
-=== Public vs Private methods ===
+==== Public vs Private methods ====
 
 Method prefixed with an underscore (_) will not be available publicly. Otherwise, the method will be accessible and callable like this;
 
@@ -79,13 +81,13 @@ $(selector).gWidgetName('methodName', options);
 
 
 
-=== Changing config after initialization ===
+==== Changing config after initialization ====
 
 {{{
 $(selector).gWidgetName('option', 'speed', 1.0);
 }}}
 
-== Global config manager ==
+=== Global config manager ===
 
 You can set and get global configurations with these methods;
 
@@ -97,9 +99,9 @@ $.grappelli.conf.get('Hello'); // outputs 'World'
 
 }}}
 
-= CSS =
+== CSS ==
 
-== jQuery UI CSS Framework ==
+=== jQuery UI CSS Framework ===
 
 || `.ui-helper-hidden` || Applies display: none to elements. ||
 || `.ui-helper-hidden-accessible` || Applies accessible hiding to elements (via abs positioning off the page) ||
