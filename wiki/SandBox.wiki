@@ -10,6 +10,14 @@ svn co https://django-grappelli.googlecode.com/svn/branches/sandbox grappelli-sa
 
 }}}
 
+*Tip*: The sandbox comes with fixtures for a default super user so you don't have to create one each time you rebuild the test database. The default username password is *admin/admin*. 
+
+*Pro Tip*: 
+
+{{{
+rm -f test.db && python manage.py syncdb --noinput
+}}}
+
 
 = Default username/pass =
 
