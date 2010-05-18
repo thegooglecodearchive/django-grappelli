@@ -14,6 +14,8 @@
     * [settings_2_1 Available Settings]
     * [modeladminoptions_2_1 Model Admin]
     * [inlinemodeladminoptions_2_1 Inline Model Admin]
+    * [relatedlookups_2_1 Related Lookups]
+    * [generic_2_1 Generic Relationships]
   * Documentation Grappelli 2.0
     * [Installation Installation]
     * [setup Setup]
