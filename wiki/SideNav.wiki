@@ -9,6 +9,7 @@
     * [djangoissues Django issues]
     * [Reviews Reviews]
   * Documentation Grappelli 2.1
+    * [changelog_2_1 Changelog]
     * [Installation_2_1 Installation]
     * [setup_2_1 Setup]
     * [settings_2_1 Available Settings]
