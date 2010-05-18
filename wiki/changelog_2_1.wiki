@@ -3,3 +3,10 @@
   * Added grid-based HTML/CSS Framework.
   * Removed all extra-functionality like Bookmarks/Navigation.
   * Customizing Admin Index Page can be done with *Grappelli-Admin-Tools*, see http://bitbucket.org/fetzig/grappelli-admin-tools/wiki/Home
+  * Some updates to the Changelist:
+    * We´ve removed the Sidebar.
+    * Filters are collapsible.
+    * Actions are only visible if you select a checkbox.
+    * The submit-row is only visible if you change/focus a form-element.
+    * Actions and list_editables are deactivated for popups.
+    * Pagination is on top and at the bottom of the page.
