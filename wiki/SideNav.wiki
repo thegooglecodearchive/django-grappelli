@@ -10,6 +10,7 @@
     * [Reviews Reviews]
   * Documentation Grappelli 2.1
     * [Installation_2_1 Installation]
+    * [setup_2_1 Setup]
   * Documentation Grappelli 2.0
     * [Installation Installation]
     * [setup Setup]
