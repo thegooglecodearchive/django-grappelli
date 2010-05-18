@@ -11,6 +11,7 @@
   * Documentation Grappelli 2.1
     * [Installation_2_1 Installation]
     * [setup_2_1 Setup]
+    * [settings_2_1 Available Settings]
   * Documentation Grappelli 2.0
     * [Installation Installation]
     * [setup Setup]
