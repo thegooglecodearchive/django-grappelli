@@ -2,7 +2,7 @@
 
   * Added grid-based HTML/CSS Framework.
   * Removed all extra-functionality like Bookmarks/Navigation.
-  * Customizing Admin Index Page can be done with *Grappelli-Admin-Tools*, see http://bitbucket.org/fetzig/grappelli-admin-tools/wiki/Home
+  * Customizing Admin Index Page can be done with [http://bitbucket.org/fetzig/grappelli-admin-tools/wiki/Home Grappelli-Admin-Tools].
   * Changelist:
     * We´ve removed the Sidebar.
     * Filters are collapsible.
