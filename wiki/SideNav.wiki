@@ -17,6 +17,7 @@
     * [relatedlookups_2_1 Related Lookups]
     * [generic_2_1 Generic Relationships]
     * [tinymce_2_1 Using TinyMCE]
+    * [customizingindex_2_1 Customizing the Admin Index Page]
   * Documentation Grappelli 2.0
     * [Installation Installation]
     * [setup Setup]
