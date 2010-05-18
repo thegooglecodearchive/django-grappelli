@@ -12,6 +12,8 @@
     * [Installation_2_1 Installation]
     * [setup_2_1 Setup]
     * [settings_2_1 Available Settings]
+    * [modeladminoptions_2_1 Model Admin]
+    * [inlinemodeladminoptions_2_1 Inline Model Admin]
   * Documentation Grappelli 2.0
     * [Installation Installation]
     * [setup Setup]
