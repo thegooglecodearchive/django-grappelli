@@ -2,6 +2,7 @@
 
 ===2.1 (2010-05-20):===
 
+    * Compatible with Django 1.2.
     * Added grid-based HTML/CSS Framework.
     * Removed all extra-functionality like Bookmarks/Navigation.
     * Customizing the Admin Index Page can be done with Grappelli-Admin-Tools.
@@ -18,6 +19,7 @@
 
 ===2.0 (2009-11-13):===
 
+    * Compatible with Django 1.1.
     * Refactored Stylesheets (including re-writing lots of stuff).
     * CSS cleanup (decoupled styles from Djangos original stylesheets).
     * Removed all Background-Images (excluding Icons).
