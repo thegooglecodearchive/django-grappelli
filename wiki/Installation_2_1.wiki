@@ -32,19 +32,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 }}}
   # *Change grappelli/settings.py*
     Take a look at the available grappelli-settings and change them (if needed).
-  # *Sync your Database*
-    Run the Django 'syncdb' command to create the appropriate tables.
-{{{
-python manage.py syncdb
-}}}
-    _This will create the tables for Bookmarks, Help & Navigation._
-  # *Optional: Load Fixtures*
-    It´s recommended to load some initial data.
-{{{
-python manage.py loaddata grappelli_navigation.json --settings=settings
-python manage.py loaddata grappelli_help.json --settings=settings
-}}}
-    _Note that the Admin-Links within the Fixtures begin with /admin/ ... if your Admin-Interface is accessible via a different URL, you have to change this (either change the json-files before loading or change the URLs afterwards)._
   # *Copy/Symlink media*
     Copy the folder /media/ to your admin media-directory. Alternatively, you might want to use a symlink.
 {{{
