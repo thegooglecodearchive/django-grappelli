@@ -16,6 +16,7 @@
     * [inlinemodeladminoptions_2_1 Inline Model Admin]
     * [relatedlookups_2_1 Related Lookups]
     * [generic_2_1 Generic Relationships]
+    * [tinymce_2_1 Using TinyMCE]
   * Documentation Grappelli 2.0
     * [Installation Installation]
     * [setup Setup]
