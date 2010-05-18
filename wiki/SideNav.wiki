@@ -8,11 +8,12 @@
     * [updates Updates]
     * [djangoissues Django issues]
     * [Reviews Reviews]
-  * Installation
+  * Documentation Grappelli 2.1
+    * [Installation_2_1 Installation]
+  * Documentation Grappelli 2.0
     * [Installation Installation]
     * [setup Setup]
     * [settings Available Settings]
-  * Documentation
     * [modeladminoptions Model Admin]
     * [inlinemodeladminoptions Inline Model Admin]
     * [relatedlookups Related Lookups]
