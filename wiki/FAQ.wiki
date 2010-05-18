@@ -8,11 +8,9 @@ We tried to give the Admin-Interface a more "grown-up" and coherent look & feel 
 
 With all the crappy Rich-Text-Editors out there, this one is ok (don´t ask how long it took to style the plug-in windows ...).
 ----
-*Instead of just changing the original Django Admin-Interface, why is Grappelli not totally build up from scratch?*
+*Instead of just skinning the original Django Admin-Interface, why is Grappelli not totally build up from scratch?*
 
 Because if there are new features in the Admin-Interface, we are planning to integrate them as fast as possible using Grappelli. Therefore, Grappelli heavily relies on the Original Interface.
-
-_That said, we´ve refactored most HTML/CSS- and JS-Files!_
 ----
 *Who made Grappelli?*
 
