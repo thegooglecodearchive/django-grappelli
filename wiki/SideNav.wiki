@@ -19,6 +19,7 @@
     * [generic_2_1 Generic Relationships]
     * [tinymce_2_1 Using TinyMCE]
     * [customizingindex_2_1 Customizing the Admin Index Page]
+    * [contrib Contrib]
   * Documentation Grappelli 2.0
     * [Installation Installation]
     * [setup Setup]
