@@ -1,4 +1,4 @@
-= Introduction =
+= Contrib =
 
 Some django "pluggable" applications have been made compatible with grappelli and others have been specifically created for grappelli. This list some applications that where tested with grappelli (and adapted if needed).
 
