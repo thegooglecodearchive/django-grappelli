@@ -37,3 +37,14 @@ class EntryOptions(admin.ModelAdmin):
     class Media:
         ...
 }}}
+
+== search_fields_verbose ==
+
+In order to actually _*see*_ what you´re searching for within a Change-List, you can define *search_fields_verbose*.
+{{{
+class EntryOptions(admin.ModelAdmin):
+    ...
+    search_fields = ['id', 'title', 'subtitle', 'pub_date']
+    search_fields_verbose = ['ID', 'Title', 'Subtitle', 'Publication Date']
+    ...
+}}}
