@@ -1,4 +1,4 @@
-=Multiple Admin Site=
+=Multiple Admin Sites=
 
 If you need multiple Admin-Sites, you have to use Grappellis Admin-Site subclass.
 
