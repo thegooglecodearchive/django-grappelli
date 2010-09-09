@@ -8,6 +8,7 @@ If you think there´s something missing here (or if an Issue has been resolved),
 
 Because in case of errors, formsets are not returned in the right order, reordering inlines is currently not possible.<br>
 _(Solution seems to be coming ... somewhere.)_
+see http://code.djangoproject.com/ticket/14238
 
 ==Translating App Names==
 
