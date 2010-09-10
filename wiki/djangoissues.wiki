@@ -17,7 +17,8 @@ see http://code.djangoproject.com/ticket/14238
 It´s not possible to translate the names of apps within the admin-interface which leads to a strange language mix (esp. on the index page).<br>
 _(There´s already a ticket but IMHO it does not solve the problem.)_
 
-Update (2010-09): Currently, this doesn´t work at all (even with using locales).
+Update (2010-09): Currently, this doesn´t work at all (even with using locales).<br>
+see http://code.djangoproject.com/ticket/3591
 
 ==The Admin Index Site==
 
