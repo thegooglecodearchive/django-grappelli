@@ -22,7 +22,7 @@ Update (2010-09): Currently, this doesn´t work at all (even with using locales)
 ==The Admin Index Site==
 
 Currently, the admin index site reflects the structure of your applications/models. We don´t think editors (who use the admin site) are interested in the structure of your project/applications. What they want is the most reasonable list of models, divided into different sections (not necessarily apps).<br>
-_(Solved with Grappelli ... but still looking for a better way to handle this issue.)_
+_(Solved with Grappelli-Admin-Tools ... but still looking for a better way to handle this issue.)_
 
 ==Admin Site Objects and Related Lookups==
 
@@ -37,7 +37,7 @@ _(I´m not sure if this will be solved.)_
 ==Messages in Admin==
 
 It´s currently not possible to distinguish between Success- and Error-Messages.
-_(Solved with Grappelli.)_
+_(Solved with the most recent version of Django.)_
 
 ==M2M RawID Field has no Unicode representation==
 
