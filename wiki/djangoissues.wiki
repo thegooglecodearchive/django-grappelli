@@ -1,6 +1,7 @@
 =Django Issues=
 
-There are some known problems with the Django admin-interface. I´m going to list them here in order to avoid confusion (because the problems are not related to Grappelli whatsoever). See also: http://code.djangoproject.com/wiki/DjangoDesign
+There are some known problems with the Django admin-interface. I´m going to list them here in order to avoid confusion (because the problems are not related to Grappelli whatsoever). See also: http://code.djangoproject.com/wiki/DjangoDesign<br>
+*Most of these Issues are around for quite a while and they are unlikely to be solved.*
 
 If you think there´s something missing here (or if an Issue has been resolved), please drop me an email.
 
