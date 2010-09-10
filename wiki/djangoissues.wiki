@@ -16,6 +16,8 @@ see http://code.djangoproject.com/ticket/14238
 It´s not possible to translate the names of apps within the admin-interface which leads to a strange language mix (esp. on the index page).<br>
 _(There´s already a ticket but IMHO it does not solve the problem.)_
 
+Update (2010-09): Currently, this doesn´t work at all (even with using locales).
+
 ==The Admin Index Site==
 
 Currently, the admin index site reflects the structure of your applications/models. We don´t think editors (who use the admin site) are interested in the structure of your project/applications. What they want is the most reasonable list of models, divided into different sections (not necessarily apps).<br>
