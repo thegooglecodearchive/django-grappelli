@@ -52,7 +52,7 @@ class EntryOptions(admin.ModelAdmin):
 
 == actions ==
 
-= csv_export_selected =
+=== csv_export_selected ===
 
 Export change_list as csv.
 
