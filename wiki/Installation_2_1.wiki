@@ -13,16 +13,24 @@ svn checkout http://django-grappelli.googlecode.com/svn/trunk/grappelli/ grappel
 INSTALLED_APPS = (
     ...
     'grappelli',
+    
+    # if you use admin_tools
+    'admin_tools.theming',
+    'admin_tools.menu',
+    'admin_tools.dashboard',
+    
     'django.contrib.admin',
     ...
 )
 }}}
   # *Add context-processors*
-    Open your projects settings-file. For Grappelli, you need the _request context processor_. The _authentication context processor_ is needed for the admin-interface anyway.
+    Open your projects settings-file. For Grappelli, you need the _request context processor_. The _authentication context processor_ is needed for the admin-interface anyway. The grappelli.context_processors.admin_template_path is required to check if you use admin_tools or not (and render the necessary templates).
 {{{
 TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.auth",
     "django.core.context_processors.request",
+    ...
+    "grappelli.context_processors.admin_template_path",
 )
 }}}
   # *Change urls.py*
