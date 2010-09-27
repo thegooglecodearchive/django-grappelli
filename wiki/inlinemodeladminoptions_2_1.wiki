@@ -13,3 +13,27 @@ class NavigationItemInline(admin.StackedInline):
     classes = ('collapse open',)
     ...
 }}}
+
+
+==sortable inlines==
+
+You can make inlines sortable. All you need some kind of position field (i.e. PositiveSmallIntegerField) and an additional property in the StackedInline or TabularInline.
+
+The field specified in the sortable_field_name will be hidden in the change_form. You can edit the order of the inlines via drag&drop of the symbol left to the delete button of the inline (screenshot will follow).
+
+{{{
+#model.py
+
+class TabularOne(models.Model):
+    ...
+    position = models.PositiveSmallIntegerField("Position")
+    class Meta:
+        ordering = ['position']
+    ...
+
+#admin.py
+class TabularOne(admin.TabularInline):
+    ...
+    sortable_field_name = "position"
+    ...
+}}}
