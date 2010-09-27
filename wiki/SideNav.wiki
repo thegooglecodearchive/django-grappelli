@@ -20,6 +20,7 @@
     * [tinymce_2_1 Using TinyMCE]
     * [customizingindex_2_1 Customizing the Admin Index Page]
     * [admin_sites Multiple Admin Sites]
+    * [GrappelliAdminToolsSetup grappelli + admin-tools Setup]
     * [Contrib Contrib]
   * Documentation Grappelli 2.0
     * [Installation Installation]
