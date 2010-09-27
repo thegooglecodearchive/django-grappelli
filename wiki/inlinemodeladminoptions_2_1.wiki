@@ -17,7 +17,7 @@ class NavigationItemInline(admin.StackedInline):
 
 ==sortable inlines==
 
-You can make inlines sortable. All you need some kind of position field (i.e. PositiveSmallIntegerField) and an additional property in the StackedInline or TabularInline.
+You can make inlines sortable. All you need some kind of position field (i.e. PositiveSmallIntegerField) in the model and an additional property in the admin.StackedInline or admin.TabularInline of the model.
 
 The field specified in the sortable_field_name will be hidden in the change_form. You can edit the order of the inlines via drag&drop of the symbol left to the delete button of the inline (screenshot will follow).
 
