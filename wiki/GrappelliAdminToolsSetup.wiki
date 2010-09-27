@@ -1,1 +1,8 @@
-todo: klemens: tomorrow
+Grappelli is not only a skin for django.contrib.admin. It is a skin for django-admin-tools too. Thus grappelli has it's old bookmarks feature back. Additionally you can customize the order and hierarchy of the admin index and app_index, add modules like "Recent Actions", and some more very nice features from admin-tools.
+
+Basically it works like described in the admin-tools docu http://packages.python.org/django-admin-tools/ but some things are different or not (yet) supported when using admin-tools with grappelli...
+
+TODO: klemens: will complete this page tomorrow.
+
+ * special/additional css classes for dashboard and menu (collapse, open, close, column_1, column_2, column_3)
+ * not (yet) supported admin_tools properties
