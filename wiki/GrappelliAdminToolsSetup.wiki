@@ -2,6 +2,7 @@ Grappelli is not only a skin for django.contrib.admin. It is a skin for django-a
 
 Basically it works like described in the admin-tools docu http://packages.python.org/django-admin-tools/ but some things are different or not (yet) supported when using admin-tools with grappelli...
 
+_ Note: We suggest to work around the current limitations (compared to the original feature set of admin_tools). But patches to add admin_tools features to grappelli are very welcome._
 
 ===special/additional css classes===
 
