@@ -34,6 +34,7 @@ class TabularOne(models.Model):
 #admin.py
 class TabularOne(admin.TabularInline):
     ...
+    # this is what grappelli needs to know it's a sortable inline
     sortable_field_name = "position"
     ...
 }}}
