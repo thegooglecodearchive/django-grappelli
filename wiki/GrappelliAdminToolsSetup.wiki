@@ -58,8 +58,9 @@ Here a list of all admin_tools features that work with grappelli as skin:
  * bookmarks in menu
 
 ===not supported with grappelli===
-Features not (yet) implemented in grappelli (we will announce new features asap. so please don't ask).
+Features not (yet) implemented in grappelli. some of them will be implemented some of them not. we will announce new features asap.
 
  * drag&drop and delete of dashboard modules (pretty much all the user can customize isn't implemented)
  * Group class: templates ignore display setting (‘tabs’, ‘accordion’, ‘stacked’). looks always the same
+ * fly out menus
  * ...
