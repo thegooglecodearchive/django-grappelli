@@ -2,7 +2,25 @@ Grappelli is not only a skin for django.contrib.admin. It is a skin for django-a
 
 Basically it works like described in the admin-tools docu http://packages.python.org/django-admin-tools/ but some things are different or not (yet) supported when using admin-tools with grappelli...
 
-TODO: klemens: will complete this page tomorrow.
 
- * special/additional css classes for dashboard and menu (collapse, open, close, column_1, column_2, column_3)
- * not (yet) supported admin_tools properties
+
+===special/additional css classes===
+
+ * collapse, open/close works as opt. in for dashboard modules. pretty much the same as with inlines.
+
+ * Every direct children of the dashboard needs a css class named "column_1", "column_2" or "column_3". This css class defines where the module is rendered.
+
+
+===supported with grappelli===
+Here a list of all admin_tools features that work with grappelli as skin:
+
+ * admin/index and admin/app_index customization
+ * menu customization
+ * bookmarks in menu
+
+===not supported with grappelli===
+Features not (yet) implemented in grappelli (we will announce new features asap. so please don't ask).
+
+ * drag&drop and delete of dashboard modules (pretty much all the user can customize isn't implemented)
+ * Group class: templates ignore display setting (‘tabs’, ‘accordion’, ‘stacked’). looks always the same
+ * ...
