@@ -49,30 +49,6 @@ class EntryOptions(admin.ModelAdmin):
     ...
 }}}
 
-
-== sortable inlines ==
-
-To make your stacked/tabular inlines sortable via drag&drop you have to define a "postition field" (i.e. PositiveSmallIntegerField), order you model by it and tell grappelli about it (== sortable_field_name)
-
-{{{
-# models.py
-class StackedOne(models.Model):
-    ...
-    position = models.PositiveSmallIntegerField("Position")
-    ...
-    class Meta:
-        ...
-        ordering = ['position']
-        ...
-
-
-# admin.py
-class StackedOne(admin.StackedInline):
-    ...
-    sortable_field_name = "position"
-}}}
-
-
 == actions ==
 
 === csv_export_selected ===
