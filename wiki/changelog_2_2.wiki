@@ -1,0 +1,10 @@
+=Changelog=
+
+  * Basic support for [http://bitbucket.org/izi/django-admin-tools/wiki/Home django-admin-tools].
+    * Customizing the Admin Index Page
+    * Menu in header (bookmark functionality is back)
+  * Changelist:
+    * Added CSV-Export Action
+    * Added Tooltips (see search)
+  * Changeform:
+    * Inlines are sortable
