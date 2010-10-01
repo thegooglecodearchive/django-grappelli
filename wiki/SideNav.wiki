@@ -11,6 +11,7 @@
   * Documentation Grappelli 2.2
     * [changelog_2_2 Changelog]
     * [requirements_2_2 Requirements]
+    * [Upgrade_2_2 Uprgrade from 2.1]
     * [Installation_2_2 Installation]
     * [setup_2_2 Setup]
     * [settings_2_2 Available Settings]
