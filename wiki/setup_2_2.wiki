@@ -1,0 +1,7 @@
+=Setup=
+
+For using Grappelli, you have to follow some rules when it comes to your projects setup.
+
+==Defining Generic Relations==
+
+In order to use *Visual Generic Relationships*, you have to use the names _content_type_ and _object_id_ for defining generic relations, see [http://code.google.com/p/django-grappelli/wiki/generic Generic Relationships] for more on this issue.
