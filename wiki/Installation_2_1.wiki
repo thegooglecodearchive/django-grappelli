@@ -14,11 +14,6 @@ INSTALLED_APPS = (
     ...
     'grappelli',
     
-    # if you use admin_tools
-    'admin_tools.theming',
-    'admin_tools.menu',
-    'admin_tools.dashboard',
-    
     'django.contrib.admin',
     ...
 )
