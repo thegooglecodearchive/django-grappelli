@@ -37,4 +37,4 @@ INSTALLED_APPS = (
     ...
 )
 }}}
-  Follow the installation [http://packages.python.org/django-admin-tools/0.3.0/quickstart.html#installing-django-admin-tools documentation of django-admin-tools]
+    Follow the installation [http://packages.python.org/django-admin-tools/0.3.0/quickstart.html#installing-django-admin-tools documentation of django-admin-tools]
