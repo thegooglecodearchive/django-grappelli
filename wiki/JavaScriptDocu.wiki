@@ -1,3 +1,30 @@
 =Javascript Documentation=
 
 This page gives you basic information about the !JavaScript code of grappelli.
+
+==Loading Order==
+
+Here I try to explain what JS files grappelli loads, and a short description which code is executed onReady/onLoad.
+
+You can always (re)check this yourself by using firebugs _Net_ tab selecting _JS_. Which is highly recommended, because it often depends on your configuration (Model, !AdminModel, tinymce setup, admin_tools, filebrowser,...) which js-files are loaded.
+
+    * `media/admin/jquery/jquery-1.4.2.min.js`
+    * `media/admin/jquery/ui/js/jquery-ui-1.8.custom.min.js`
+    * `media/admin/js/grappelli.init.js`
+    * `media/admin/js/grappelli.timepicker.js`
+    * `media/admin/js/grappelli.RelatedObjectLookups.js`
+    * `media/admin/js/grappelli.min.js`
+    * `media/admin/js/core.js`
+    * `media/admin/js/admin/RelatedObjectLookups.js`
+    * `admin/jsi18n/`
+    * `media/admin/js/jquery.min.js`
+    * `media/admin/js/jquery.init.js`
+    * `media/admin/js/actions.min.js`
+    * `media/admin/js/urlify.js`
+    * `media/admin/js/prepopulate.min.js`
+    * `media/admin/tinymce/jscripts/tiny_mce/tiny_mce.js`
+    * `media/admin/tinymce_setup/tinymce_setup.js`
+    * `media/admin/js/calendar.js`
+    * `media/admin/js/admin/DateTimeShortcuts.js`
+    * `media/admin/js/grappelli.change_list.js`
+    * `media/admin/tinymce/jscripts/tiny_mce/*`
