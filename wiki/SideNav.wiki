@@ -24,6 +24,7 @@
     * [admin_sites_2_2 Multiple Admin Sites]
     * [GrappelliAdminToolsSetup_2_2 grappelli + admin-tools Setup]
     * [Contrib Contrib]
+    * [JavaScriptDocu Javascript Documentation]
   * Documentation Grappelli 2.1
     * [changelog_2_1 Changelog]
     * [Installation_2_1 Installation]
