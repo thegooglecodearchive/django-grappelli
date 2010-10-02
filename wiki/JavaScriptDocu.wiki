@@ -1,4 +1,3 @@
 =Javascript Documentation=
 
-This page gives you basic information about the JavaScript code of grappelli.
-
+This page gives you basic information about the !JavaScript code of grappelli.
