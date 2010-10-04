@@ -1,7 +1,7 @@
 =Requirements=
 
-  * django 1.2.3 or later
-  * optional
-    * admin_tools 0.3 or later
-    * filebrowser 3.1 or later
-    * medman trunk HEAD
+  * Django 1.2.3+
+  * Optional:
+    * [http://bitbucket.org/izi/django-admin-tools/wiki/Home AdminTools] 0.3+
+    * [http://code.google.com/p/django-filebrowser/ FileBrowser] 3.1+
+    * [http://code.google.com/p/django-medman/ MedMan] trunk HEAD
