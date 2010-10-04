@@ -4,9 +4,7 @@
   * Information
     * [FAQ FAQ]
     * [Features Features]
-    * [releasenotes Release Notes]
     * [djangoissues Django issues]
-    * [Reviews Reviews]
   * Documentation Grappelli 2.2
     * [changelog_2_2 Changelog]
     * [requirements_2_2 Requirements]
