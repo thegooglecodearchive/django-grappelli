@@ -7,7 +7,7 @@ If you think there´s something missing here (or if an Issue has been resolved),
 
 ==Reordering Edit-Inlines==
 
-Because in case of errors, formsets are not returned in the right order, reordering inlines is currently not possible.<br>
+Because in case of errors, formsets are not returned in the right order, reordering inlines is currently not possible. UPDATE: We´ve integrated a pure js-based-solution in order to drag/drop inlines with Grappelli 2.2.<br>
 _(Solution seems to be coming ... somewhere.)_
 
 see http://code.djangoproject.com/ticket/14238
