@@ -14,5 +14,5 @@ Because if there are new features in the Admin-Interface, we are planning to int
 ----
 *Who made Grappelli?*
 
-Grappelli is made and maintained by Patrick Kranzlmüller and Axel Swoboda of vonautomatisch (http://vonautomatisch.at). jQuery-features by Maxime Haineault (http://haineault.com).
+Grappelli is made and maintained by Patrick Kranzlmüller, Axel Swoboda and Klemens Mantzos of vonautomatisch (http://vonautomatisch.at). jQuery-features partly written by Maxime Haineault (http://haineault.com).
 ----
