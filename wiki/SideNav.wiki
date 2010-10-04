@@ -5,7 +5,6 @@
     * [FAQ FAQ]
     * [Features Features]
     * [releasenotes Release Notes]
-    * [updates Updates]
     * [djangoissues Django issues]
     * [Reviews Reviews]
   * Documentation Grappelli 2.2
