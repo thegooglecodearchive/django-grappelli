@@ -21,8 +21,8 @@
     * [generic_2_2 Generic Relationships]
     * [tinymce_2_2 Using TinyMCE]
     * [customizingindex_2_2 Customizing the Admin Index Page]
+    * [GrappelliAdminToolsSetup_2_2 AdminTools Setup]
     * [admin_sites_2_2 Multiple Admin Sites]
-    * [GrappelliAdminToolsSetup_2_2 grappelli + admin-tools Setup]
     * [Contrib Contrib]
     * [JavaScriptDocu Javascript Documentation]
   * Documentation Grappelli 2.1
