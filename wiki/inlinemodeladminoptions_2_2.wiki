@@ -6,7 +6,7 @@ With Grappelli, you get some additional attributes for defining your !InlineMode
 
 [http://vonautomatisch.at/media/uploads/grappelli/collapsed_fields_inline.jpg]
 
-You have two options for displaying inline-groups. With *"collapse open"*, the inline-group is collapsible and open by default. With *"collapse closed"*, the inline-group is collapsible but closed by default. Without using a class, the inline-group won´t be collapsible.
+There are two options for displaying inline-groups. With *"collapse open"*, the inline-group is collapsible and open by default. With *"collapse closed"*, the inline-group is collapsible but closed by default. Without using a class, the inline-group won´t be collapsible.
 {{{
 class NavigationItemInline(admin.StackedInline):
     
@@ -17,15 +17,16 @@ class NavigationItemInline(admin.StackedInline):
 
 ==sortable inlines==
 
-You can make inlines sortable. All you need some kind of position field (i.e. !PositiveSmallIntegerField) in the model and an additional property in the admin.!StackedInline or admin.!TabularInline of the model.
+You can make inlines sortable (drag/drop) using a position field (i.e. !PositiveSmallIntegerField) and an additional property with admin.!StackedInline or admin.!TabularInline.
 
-The field specified in the sortable_field_name will be hidden in the change_form. You can edit the order of the inlines via drag&drop of the symbol left to the delete button of the inline (screenshot will follow).
+The field specified in the sortable_field_name will be hidden in the change_form.
 
 {{{
 #model.py
 
 class TabularOne(models.Model):
     ...
+    # position field
     position = models.PositiveSmallIntegerField("Position")
     class Meta:
         ordering = ['position']
@@ -34,7 +35,7 @@ class TabularOne(models.Model):
 #admin.py
 class TabularOne(admin.TabularInline):
     ...
-    # this is what grappelli needs to know it's a sortable inline
+    # define the sortable
     sortable_field_name = "position"
     ...
 }}}
