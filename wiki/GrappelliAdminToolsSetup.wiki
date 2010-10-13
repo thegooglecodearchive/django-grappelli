@@ -1,10 +1,11 @@
-Grappelli is not only a skin for django.contrib.admin. It is a skin for django-admin-tools too. Thus grappelli has it's old bookmarks feature back. Additionally you can customize the order and hierarchy of the admin index and app_index, add modules like "Recent Actions", and some more very nice features from admin-tools.
+Grappelli is not only a skin for django.contrib.admin, it's a skin for django-admin-tools as well.
+Thus grappelli has it's old bookmarks feature back. Additionally you can customize the order and hierarchy of the admin index and app_index, add modules like "Recent Actions", and some more very nice features from admin-tools.
 
-Basically it works like described in the admin-tools docu http://packages.python.org/django-admin-tools/ but some things are different or not (yet) supported when using admin-tools with grappelli...
+Basically it works like described in the admin-tools documentation (http://packages.python.org/django-admin-tools/) but some things are different or not (yet) supported when using admin-tools with grappelli...
 
 _ Note: We suggest to work around the current limitations (compared to the original feature set of admin_tools). But patches to add admin_tools features to grappelli are very welcome._
 
-===special/additional css classes===
+===Special/Additional CSS classes===
 
  * collapse, open/close works as opt. in for dashboard modules. pretty much the same as with inlines.
 
@@ -51,17 +52,17 @@ class CustomIndexDashboard(Dashboard):
 }}}
 
 
-===supported with grappelli===
-Here a list of all admin_tools features that work with grappelli as skin:
+===Supported with Grappelli===
+Here a list of all admin_tools features that work with Grappelli as skin:
 
- * admin/index and admin/app_index customization
- * menu customization
- * bookmarks in menu
+ * Admin–Index and Admin–!AppIndex customization
+ * Menus
+ * Bookmarks
 
-===not supported with grappelli===
-Features not (yet) implemented in grappelli. some of them will be implemented some of them not. we will announce new features asap.
+===Currently not supported with Grappelli===
+Features not (yet) implemented with Grappelli.
 
- * drag&drop and delete of dashboard modules (pretty much all the user can customize isn't implemented)
+ * Drag&Drop and delete of dashboard modules (pretty much all the user can customize isn't implemented)
  * Group class: templates ignore display setting (‘tabs’, ‘accordion’, ‘stacked’). looks always the same
- * fly out menus
+ * Fly–out menus
  * ...
