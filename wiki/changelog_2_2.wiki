@@ -5,6 +5,5 @@
     * Menu in header (bookmark functionality is back).
   * Changelist:
     * Action for CSV-Export.
-    * Tooltips for the search-field.
   * Changeform:
     * Inlines are sortable (drag/drop).
