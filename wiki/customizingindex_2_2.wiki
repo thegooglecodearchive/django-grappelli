@@ -1,3 +1,3 @@
 =Customizing Index Page=
 
-Customizing the Admin Index Page can be done with [GrappelliAdminToolsSetup django-admin-tools].
+Customizing the Admin Index Page can be done with [GrappelliAdminToolsSetup_2_2 django-admin-tools].
