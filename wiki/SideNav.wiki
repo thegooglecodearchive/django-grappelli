@@ -10,7 +10,6 @@
     * [DocumentationDev#Requirements Requirements]
     * [DocumentationDev#Installation Installation]
     * [DocumentationDev#Grappelli_Settings Grappelli Settings]
-    * [DocumentationDev#Project_Setup Project Setup]
   * Documentation Grappelli 2.2
     * [changelog_2_2 Changelog]
     * [requirements_2_2 Requirements]
