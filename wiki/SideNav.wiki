@@ -7,6 +7,10 @@
     * [djangoissues Django issues]
   * [DocumentationDev Documentation Grappelli dev (= trunk)]
     * [DocumentationDev#Changelog Changelog]
+    * [DocumentationDev#Requirements Requirements]
+    * [DocumentationDev#Installation Installation]
+    * [DocumentationDev#Grappelli Settings Grappelli Settings]
+    * [DocumentationDev#Project Setup Project Setup]
   * Documentation Grappelli 2.2
     * [changelog_2_2 Changelog]
     * [requirements_2_2 Requirements]
