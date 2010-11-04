@@ -10,6 +10,12 @@
     * [DocumentationDev#Requirements Requirements]
     * [DocumentationDev#Installation Installation]
     * [DocumentationDev#Grappelli_Settings Grappelli Settings]
+    * [DocumentationDev#Visual_Generic_Relations Visual Generic Relations]
+    * [DocumentationDev#ModelAdmin_Options ModelAdmin Options]
+    * [DocumentationDev#InlineModelAdmin_Options InlineModelAdmin Options]
+    * [DocumentationDev#Using_TinyMCE Using TinyMCE]
+    * [DocumentationDev#Multiple_Admin_Sites Multiple Admin Sites]
+    * [DocumentationDev#grappelli_+_admin-tools grappelli + admin-tools]
   * Documentation Grappelli 2.2
     * [changelog_2_2 Changelog]
     * [requirements_2_2 Requirements]
