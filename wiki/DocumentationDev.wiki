@@ -2,9 +2,13 @@
 
 =Changelog=
 
-  * Improved templates and feature support for [http://bitbucket.org/izi/django-admin-tools/wiki/Home django-admin-tools].
-  * Major !JavaScript rework
-
+  * Improved support for [http://bitbucket.org/izi/django-admin-tools/wiki/Home django-admin-tools]:
+    * menu: major js improvements for bookmarks, new template for custommenu command
+    * dashboard: major js/css improvements, added support for module Group accordion and tabs, added support for module draggable and deletable, save state of dashboard in dashboard_preferences, new template vor customdashboard command
+  * !JavaScript refactoring:
+    * Faster load of DOM and js magic
+    * loads (mostly) all js code from grappelli.js
+  * minor fix for sortable inlines
 =Requirements=
 
 
