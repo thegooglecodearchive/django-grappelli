@@ -1,7 +1,7 @@
 =Changelog=
 
   * Improved templates and feature support for [http://bitbucket.org/izi/django-admin-tools/wiki/Home django-admin-tools].
-  * Major JavaScript rework
+  * Major !JavaScript rework
 
 =Requirements=
 
@@ -308,7 +308,7 @@ Grappelli is not only a skin for django.contrib.admin. It is a skin for django-a
 
 Basically it works like described in the admin-tools docu http://packages.python.org/django-admin-tools/ but some things are different because of the different UI.
 
-==DashboardModule.css_classes==
+==!DashboardModule.css_classes==
 
 *Required*
  * _column_1_, _column_2_ or _column_3_: defines in which column the module is rendered. Without one of those the module isn't rendered at all.
