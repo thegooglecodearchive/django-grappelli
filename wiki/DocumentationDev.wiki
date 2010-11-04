@@ -1,3 +1,5 @@
+*NOTE: This document is for grappelli's development version, which can be significantly different from previous releases.*
+
 =Changelog=
 
   * Improved templates and feature support for [http://bitbucket.org/izi/django-admin-tools/wiki/Home django-admin-tools].
@@ -355,4 +357,3 @@ class CustomIndexDashboard(Dashboard):
         ))
         ...
 }}}
-
