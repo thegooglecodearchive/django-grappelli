@@ -6,7 +6,7 @@
     * [Features Features]
     * [djangoissues Django issues]
   * [DocumentationDev Documentation Grappelli dev (= trunk)]
-    [DocumentationDev#Changelog]
+    * [DocumentationDev#Changelog Changelog]
   * Documentation Grappelli 2.2
     * [changelog_2_2 Changelog]
     * [requirements_2_2 Requirements]
