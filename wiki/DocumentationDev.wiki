@@ -89,11 +89,8 @@ GRAPPELLI_ADMIN_TITLE = 'My Application'
 
 Grappelli is used to ensure any settings found in the main `settings.py` file take precedence over the Grappelli's settings file and provide a default value if none is found.
 
-=Project Setup=
 
-For using Grappelli, you have to follow some rules when it comes to your projects setup.
-
-==Visual Generic Relations==
+=Visual Generic Relations=
 
 In order to use *Visual Generic Relations*, you have to use the names _content_type_ and _object_id_ for defining generic relations.
 
@@ -123,11 +120,11 @@ class ContainerItem(models.Model):
 
 *Thanks to Weston Nielson (http://code.google.com/p/django-genericadmin/) for his inspiration*.
 
-==!ModelAdmin Options==
+=!ModelAdmin Options=
 
 With Grappelli, you get some additional attributes for defining your !ModelAdmin.
 
-===Related Lookups===
+==Related Lookups==
 
 When entering a value (ID) for a !ForeignKey, the related object is instantly displayed right beside the input-field (after the search-icon).
 
@@ -137,9 +134,9 @@ This also works for a M2M-field.
 
 [http://vonautomatisch.at/media/uploads/grappelli/m2m_lookup.jpg]
 
-====Usage====
+===Usage===
 
-=====model.py=====
+====model.py====
 
 {{{
 class MyModel(models.Model):
@@ -147,7 +144,7 @@ class MyModel(models.Model):
     # ...
 }}}
 
-=====admin.py=====
+====admin.py====
 
 {{{
 class MyModelAdmin(admin.ModelAdmin):
@@ -156,7 +153,7 @@ class MyModelAdmin(admin.ModelAdmin):
     # ...
 }}}
 
-===collapse open, collapse closed===
+==collapse open/closed==
 
 [http://vonautomatisch.at/media/uploads/grappelli/collapsed_fields.jpg]
 
@@ -192,7 +189,7 @@ class EntryOptions(admin.ModelAdmin):
         ...
 }}}
 
-===search_fields_verbose===
+==search_fields_verbose==
 
 In order to actually _*see*_ what you´re searching for within a Change-List, you can define *search_fields_verbose*.
 {{{
@@ -203,9 +200,9 @@ class EntryOptions(admin.ModelAdmin):
     ...
 }}}
 
-===actions===
+==actions==
 
-====csv_export_selected====
+===csv_export_selected===
 
 Export change_list as csv.
 
@@ -218,11 +215,9 @@ class EntryOptions(admin.ModelAdmin):
     ...
 }}}
 
-==!InlineModelAdmin Options==
+=!InlineModelAdmin Options=
 
-With Grappelli, you get some additional attributes for defining your !InlineModelAdmin.
-
-===collapse open, collapse closed===
+==collapse open/closed==
 
 [http://vonautomatisch.at/media/uploads/grappelli/collapsed_fields_inline.jpg]
 
@@ -235,7 +230,7 @@ class NavigationItemInline(admin.StackedInline):
 }}}
 
 
-===sortable inlines===
+==sortable inlines==
 
 You can make inlines sortable (drag/drop) using a position field (i.e. !PositiveSmallIntegerField) and an additional property with admin.!StackedInline or admin.!TabularInline.
 
@@ -260,7 +255,7 @@ class TabularOne(admin.TabularInline):
     ...
 }}}
 
-==Using TinyMCE==
+=Using TinyMCE=
 
   # *Copy and Change tinymce_setup.js*
     Copy tinymce_setup.js (in order to not break future updates) and adjust the setup/behaviour of TinyMCE according to your needs - see http://wiki.moxiecode.com/index.php/TinyMCE:Configuration
@@ -273,7 +268,7 @@ class TabularOne(admin.TabularInline):
 
 [http://vonautomatisch.at/media/uploads/grappelli/tinymce.jpg]
 
-==Multiple Admin Sites==
+=Multiple Admin Sites=
 
 *Note: deprecated docu! this part need a rework.*
 
@@ -307,13 +302,13 @@ urlpatterns = patterns('',
 
 }}}
 
-==grappelli + admin-tools==
+=grappelli + admin-tools=
 
 Grappelli is not only a skin for django.contrib.admin. It is a skin for django-admin-tools too. Thus grappelli has it's old bookmarks feature back. Additionally you can customize the order and hierarchy of the admin index and app_index, add modules like _Recent Actions_, _Link List_, and some more very nice features from admin-tools.
 
 Basically it works like described in the admin-tools docu http://packages.python.org/django-admin-tools/ but some things are different because of the different UI.
 
-===DashboardModule.css_classes===
+==DashboardModule.css_classes==
 
 *Required*
  * _column_1_, _column_2_ or _column_3_: defines in which column the module is rendered. Without one of those the module isn't rendered at all.
