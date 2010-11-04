@@ -7,11 +7,14 @@
 
 =Requirements=
 
-  * django dev
+
+  * [http://www.djangoproject.com/ django]
   * Optional:
-    * [http://bitbucket.org/izi/django-admin-tools/wiki/Home AdminTools] dev
-    * [http://code.google.com/p/django-filebrowser/ FileBrowser] dev
-    * [http://code.google.com/p/django-medman/ MedMan] dev
+    * [http://bitbucket.org/izi/django-admin-tools/wiki/Home django-admin-tools]
+    * [http://code.google.com/p/django-filebrowser/ django-filebrowser]
+    * [http://code.google.com/p/django-medman/ django-medman]
+
+*NOTE: grappelli DEV works with the newest release and/or repository checkout of these projects.*
 
 =Installation=
 
