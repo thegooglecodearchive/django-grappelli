@@ -5,7 +5,7 @@
     * [FAQ FAQ]
     * [Features Features]
     * [djangoissues Django issues]
-  * [Documentation_dev Documentation Grappelli dev (= trunk)]
+  * [Documentation_dev Documentation Grappelli DEV]
     [Documentation_dev#Changelog Changelog]
   * Documentation Grappelli 2.2
     * [changelog_2_2 Changelog]
