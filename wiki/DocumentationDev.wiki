@@ -308,7 +308,7 @@ urlpatterns = patterns('',
 
 Grappelli is not only a skin for django.contrib.admin. It is a skin for django-admin-tools too. Thus grappelli has it's old bookmarks feature back. Additionally you can customize the order and hierarchy of the admin index and app_index, add modules like _Recent Actions_, _Link List_, and some more very nice features from admin-tools.
 
-Basically it works like described in the admin-tools docu http://packages.python.org/django-admin-tools/ but some things are different because of the different UI.
+Basically it works like described in the  [http://packages.python.org/django-admin-tools/0.3.0/index.html django-admin-tools docu] but some things are different because of the different UI.
 
 ==!DashboardModule.css_classes==
 
