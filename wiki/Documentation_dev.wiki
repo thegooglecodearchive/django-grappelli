@@ -1,0 +1,363 @@
+=Changelog=
+
+  * Improved templates and feature support for [http://bitbucket.org/izi/django-admin-tools/wiki/Home django-admin-tools].
+  * Major JavaScript rework
+
+=Requirements=
+
+  * django dev
+  * Optional:
+    * [http://bitbucket.org/izi/django-admin-tools/wiki/Home AdminTools] dev
+    * [http://code.google.com/p/django-filebrowser/ FileBrowser] dev
+    * [http://code.google.com/p/django-medman/ MedMan] dev
+
+=Installation=
+
+Before Installing Grappelli, please take a look at the known [djangoissues Django Issues].
+
+  # *Download Grappelli*
+    Install Grappelli anywhere on your python-path.
+    via svn:
+{{{
+svn checkout http://django-grappelli.googlecode.com/svn/trunk/grappelli
+}}}
+  # *Add Grappelli to your INSTALLED APPS*
+    Open your projects settings-file (settings.py) and add Grappelli to your INSTALLED APPS *before django.contrib.admin*.
+{{{
+INSTALLED_APPS = (
+    ...
+    'grappelli',
+    
+    # if you use admin_tools
+    'admin_tools.theming',
+    'admin_tools.menu',
+    'admin_tools.dashboard',
+    
+    'django.contrib.admin',
+    ...
+)
+}}}
+  # *Add TEMPLATE_CONTEXT_PROCESSORS*
+    Add missing processors:
+{{{
+TEMPLATE_CONTEXT_PROCESSORS = (
+    # required by django.contrib.admin anyway
+    "django.core.context_processors.auth",
+    # required by grappelli
+    "django.core.context_processors.request",
+    ...
+    # required to render correct templates (grappelli+admin-tools or grappelli "standalone")
+    "grappelli.context_processors.admin_template_path",
+)
+}}}
+  # *Add grappelli urls to urls.py*
+    Add Grappelli to your url-definitions.
+{{{
+(r'^grappelli/', include('grappelli.urls')),
+}}}
+  # *Copy/Symlink media*
+    Copy the folder /media/ to your admin media-directory. Alternatively, you might want to use a symlink.
+{{{
+cp -R /path/to/grappelli/media /path/to/your/admin/media
+}}}
+    _ Note: If possible, avoid using /django/contrib/admin/media/ as your media directory (since it will break future django-updates)._<br>
+    _If your ADMIN_MEDIA_PREFIX is /media/admin/ (for example), you need a directory "admin" within your media-directory. Inside of /admin/, you need all Grappelli media files._
+  # *start django server with additional parameters*
+{{{
+python manage.py runserver localhost:8000 --adminmedia=/path/to/your/admin/media/
+}}}
+
+= Grappelli Settings =
+
+All Settings can be defined in your projects settings-file (`settings.py`).
+
+All grappelli settings use the prefix "`GRAPPELLI_`" (e.g. `GRAPPELLI_ADMIN_TITLE` instead of `ADMIN_TITLE`).
+
+== Available Settings ==
+
+|| *Name* || *Description* ||
+|| `GRAPPELLI_ADMIN_TITLE` || The Site Title of your Admin-Interface. Change this instead of changing index.html ||
+|| `GRAPPELLI_ADMIN_URL` || The URL to your *Main Admin Site*. Necessary in order to get the right URLs for related lookups registered to different admin site objects. ||
+
+== Usage example ==
+
+{{{
+
+GRAPPELLI_ADMIN_TITLE = 'My Application'
+
+}}}
+
+Grappelli is used to ensure any settings found in the main `settings.py` file take precedence over the Grappelli's settings file and provide a default value if none is found.
+
+=Project Setup=
+
+For using Grappelli, you have to follow some rules when it comes to your projects setup.
+
+==Visual Generic Relations==
+
+In order to use *Visual Generic Relations*, you have to use the names _content_type_ and _object_id_ for defining generic relations.
+
+Making Generic Relations work/look like !ForeignKeys: When editing a Generic Relation, you first choose the Content Type and then the Object-ID. With Grappelli, you instantly get the related object displayed right near the Object-ID.
+
+*Note: You have to use names which include "content_type" and "object_id" for this to work.*
+
+For example, your Model could look like this:
+
+{{{
+from django.contrib.contenttypes import generic
+from django.contrib.contenttypes.models import ContentType
+from django.db import models
+
+class ContainerItem(models.Model):
+    # ...
+    content_type = models.ForeignKey(ContentType, blank=True, null=True, related_name="content_type")
+    object_id = models.PositiveIntegerField(blank=True, null=True)
+    content_object = generic.GenericForeignKey("content_type", "object_id")
+    # ...
+    content_type_2 = models.ForeignKey(ContentType, blank=True, null=True, related_name="content_type_2")
+    object_id_2 = models.PositiveIntegerField(blank=True, null=True)
+    content_object_2 = generic.GenericForeignKey("content_type_2", "object_id_2")
+}}}
+
+[http://vonautomatisch.at/media/uploads/grappelli/generic_relation.jpg]
+
+*Thanks to Weston Nielson (http://code.google.com/p/django-genericadmin/) for his inspiration*.
+
+==!ModelAdmin Options==
+
+With Grappelli, you get some additional attributes for defining your !ModelAdmin.
+
+===Related Lookups===
+
+When entering a value (ID) for a !ForeignKey, the related object is instantly displayed right beside the input-field (after the search-icon).
+
+[http://vonautomatisch.at/media/uploads/grappelli/foreignkey_relatedlookup.jpg]
+
+This also works for a M2M-field.
+
+[http://vonautomatisch.at/media/uploads/grappelli/m2m_lookup.jpg]
+
+====Usage====
+
+=====model.py=====
+
+{{{
+class MyModel(models.Model):
+    related = models.ForeignKey(RelatedModel, verbose_name=u"Related Lookup", null=True, blank=True)
+    # ...
+}}}
+
+=====admin.py=====
+
+{{{
+class MyModelAdmin(admin.ModelAdmin):
+    list_display  = ('__unicode__',)
+    raw_id_fields = ('related',)    
+    # ...
+}}}
+
+===collapse open, collapse closed===
+
+[http://vonautomatisch.at/media/uploads/grappelli/collapsed_fields.jpg]
+
+There are two classes for displaying fieldsets in the Admin-Interface. With *"collapse open"*, the headline of the fieldset is collapsible and open by default. With *"collapse closed"*, the headline of the fieldset is collapsible but closed by default. Without using a class, the fieldset won´t be collapsible.
+{{{
+class EntryOptions(admin.ModelAdmin):
+    ...
+    fieldsets = (
+        ('', {
+            'fields': ('title', 'subtitle', 'slug', 'pub_date', 'status',),
+        }),
+        ('Flags', {
+            'classes': ('collapse closed',),
+            'fields' : ('flag_front', 'flag_sticky', 'flag_allow_comments', 'flag_comments_closed',),
+        }),
+        ('Tags', {
+            'classes': ('collapse closed',),
+            'fields' : ('tags',),
+        }),
+        ('Image', {
+            'fields' : ('image',),
+        }),
+        ('Content', {
+            'classes': ('collapse open',),
+            'fields' : ('summary', 'body',),
+        }),
+        ('Author', {
+            'classes': ('collapse closed',),
+            'fields' : ('author',),
+        }),
+    )
+    class Media:
+        ...
+}}}
+
+===search_fields_verbose===
+
+In order to actually _*see*_ what you´re searching for within a Change-List, you can define *search_fields_verbose*.
+{{{
+class EntryOptions(admin.ModelAdmin):
+    ...
+    search_fields = ['id', 'title', 'subtitle', 'pub_date']
+    search_fields_verbose = ['ID', 'Title', 'Subtitle', 'Publication Date']
+    ...
+}}}
+
+===actions===
+
+====csv_export_selected====
+
+Export change_list as csv.
+
+{{{
+from grappelli.actions import csv_export_selected
+...
+class EntryOptions(admin.ModelAdmin):
+    ...
+    actions = [csv_export_selected]
+    ...
+}}}
+
+==!InlineModelAdmin Options==
+
+With Grappelli, you get some additional attributes for defining your !InlineModelAdmin.
+
+===collapse open, collapse closed===
+
+[http://vonautomatisch.at/media/uploads/grappelli/collapsed_fields_inline.jpg]
+
+There are two options for displaying inline-groups. With *"collapse open"*, the inline-group is collapsible and open by default. With *"collapse closed"*, the inline-group is collapsible but closed by default. Without using a class, the inline-group won´t be collapsible.
+{{{
+class NavigationItemInline(admin.StackedInline):
+    
+    classes = ('collapse open',)
+    ...
+}}}
+
+
+===sortable inlines===
+
+You can make inlines sortable (drag/drop) using a position field (i.e. !PositiveSmallIntegerField) and an additional property with admin.!StackedInline or admin.!TabularInline.
+
+The field specified in the sortable_field_name will be hidden in the change_form.
+
+{{{
+#model.py
+
+class TabularOne(models.Model):
+    ...
+    # position field
+    position = models.PositiveSmallIntegerField("Position")
+    class Meta:
+        ordering = ['position']
+    ...
+
+#admin.py
+class TabularOne(admin.TabularInline):
+    ...
+    # define the sortable
+    sortable_field_name = "position"
+    ...
+}}}
+
+==Using TinyMCE==
+
+  # *Copy and Change tinymce_setup.js*
+    Copy tinymce_setup.js (in order to not break future updates) and adjust the setup/behaviour of TinyMCE according to your needs - see http://wiki.moxiecode.com/index.php/TinyMCE:Configuration
+  # *Change the media-definition of your !ModelAdmin*
+{{{
+    class Media:
+        js = ['/media/admin/tinymce/jscripts/tiny_mce/tiny_mce.js', '/path/to/your/tinymce_setup.js',]
+}}}
+  # *Check the file tinymce_setup.js and change it (if you need to).*
+
+[http://vonautomatisch.at/media/uploads/grappelli/tinymce.jpg]
+
+==Multiple Admin Sites==
+
+*Note: deprecated docu! this part need a rework.*
+
+If you need multiple Admin-Sites, you have to use Grappellis Admin-Site subclass.
+
+{{{
+from grappelli.admin import AdminSite
+
+class MyModelAdmin(admin.ModelAdmin):
+...
+
+my_admin_site = AdminSite(title="My Admin Site")
+my_admin_site.register(MyModel, MyModelAdmin)
+}}}
+
+You need to change your url-patterns as well (of course):
+{{{
+from django.conf.urls.defaults import *
+from django.contrib import admin
+admin.autodiscover()
+from myapp.admin import my_admin_site
+
+urlpatterns = patterns('',
+
+    (r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    (r'^admin/filebrowser/', include('filebrowser.urls')),
+    (r'^grappelli/', include('grappelli.urls')),
+    (r'^admin/', include(admin.site.urls)),
+    (r'^my/admin/', include(my_admin_site.urls)),
+    ...
+
+}}}
+
+==grappelli + admin-tools==
+
+Grappelli is not only a skin for django.contrib.admin. It is a skin for django-admin-tools too. Thus grappelli has it's old bookmarks feature back. Additionally you can customize the order and hierarchy of the admin index and app_index, add modules like _Recent Actions_, _Link List_, and some more very nice features from admin-tools.
+
+Basically it works like described in the admin-tools docu http://packages.python.org/django-admin-tools/ but some things are different because of the different UI.
+
+===DashboardModule.css_classes===
+
+*Required*
+ * _column_1_, _column_2_ or _column_3_: defines in which column the module is rendered. Without one of those the module isn't rendered at all.
+
+*Optional*
+ * _open_/_close_: modules are _open_ by default. you can set _close_ to render the module closed.
+
+{{{
+#poject's/dashboard.py
+class CustomIndexDashboard(Dashboard):
+    
+    def __init__(self, **kwargs):
+        Dashboard.__init__(self, **kwargs)
+        
+        self.children.append(modules.LinkList(
+            title=_('Media Management'),
+            css_classes=['column_1'],
+            children=[
+                {
+                    'title': _('Django FileBrowser'),
+                    'url': '/admin/filebrowser/browse/',
+                    'external': False,
+                    'description': 'Python programming language rocks !',
+                },
+            ]
+        ))
+        
+        self.children.append(modules.AppList(
+            title=_('User...'),
+            models=('django.contrib.auth.models.User',),
+            css_classes=['column_1', 'open'],
+        ))
+        
+        self.children.append(modules.AppList(
+            title=_('Administration'),
+            include_list=('django.contrib',),
+            css_classes=['column_1', 'closed'],
+        ))
+        
+        self.children.append(modules.AppList(
+            title=_('Administration'),
+            exclude_list=('django.contrib',),
+            css_classes=['column_1', 'closed'],
+        ))
+        ...
+}}}
+
