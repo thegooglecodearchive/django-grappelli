@@ -323,7 +323,7 @@ Basically it works like described in the  [http://packages.python.org/django-adm
  * _column_1_, _column_2_ or _column_3_: defines in which column the module is rendered. Without one of those the module isn't rendered at all.
 
 *Optional*
- * _open_/_close_: modules are _open_ by default. you can set _close_ to render the module closed.
+ * _open_/_closed_: modules are _open_ by default. you can set _closed_ to render the module closed.
 
 {{{
 #poject's/dashboard.py
